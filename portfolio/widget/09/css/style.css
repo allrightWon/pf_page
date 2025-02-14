@@ -1,0 +1,358 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* xeicon CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* font(pretendard) CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+  color: #000;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+em,
+i {
+  font-style: normal;
+}
+
+:root {
+  --identity-color: #5f0080;
+  --link-small: 12px;
+}
+/* Common CSS */
+.get-hp-code-btn,
+.check-code-btn {
+  width: 120px;
+  padding: 12px 0;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #5f0080;
+  color: #5f0080;
+  cursor: pointer;
+  margin-left: 5px;
+}
+/* Header */
+header {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.header-inner {
+  width: 1150px;
+  margin: auto;
+}
+.header-top,
+.header-mid,
+.header-bot {
+  padding: 10px 0;
+}
+.header-links {
+  text-align: right;
+}
+.header-links a {
+  display: inline-block;
+  font-size: var(--link-small);
+}
+.header-links a:before {
+  content: "|";
+  margin: 0 5px;
+}
+.header-links a:first-child {
+  color: var(--identity-color);
+}
+.header-links a:first-child:before {
+  display: none;
+}
+.header-links a:last-child:after {
+  content: "\f0d7";
+  font-family: fontawesome;
+  margin-left: 5px;
+}
+.header-mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-and-tab {
+  display: flex;
+  align-items: center;
+}
+.kurly-tab {
+  margin-left: 20px;
+}
+.tab-change-btn {
+  background-color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.tab-change-btn.active,
+.tab-change-btn:hover {
+  color: var(--identity-color);
+}
+.search-box {
+  position: relative;
+  margin-right: 80px;
+}
+.search-box:after {
+  content: "\f002";
+  font-family: fontawesome;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: var(--identity-color);
+}
+.header-search {
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #5f0080;
+  outline: none;
+}
+.header-links2 {
+  display: flex;
+  gap: 30px;
+}
+.header-links2 a {
+  font-size: 30px;
+}
+.header-links2 a:hover {
+  color: var(--identity-color);
+}
+.header-bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header-category:hover a {
+  color: var(--identity-color);
+}
+.header-category a:before {
+  content: "\f0c9";
+  font-family: fontawesome;
+  margin-right: 5px;
+}
+.header-nav ul {
+  display: flex;
+  gap: 100px;
+  margin-left: 30px;
+}
+.header-nav a:hover {
+  color: var(--identity-color);
+  text-decoration: underline;
+}
+.delivery-ann a {
+  font-size: 13px;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 30px;
+  border: 1px solid #eee;
+}
+.delivery-ann a span {
+  color: var(--identity-color);
+}
+/* Section : Signup */
+.signup-section {
+  margin-top: 60px;
+  padding-bottom: 100px;
+}
+.signup-section .inner {
+  width: 640px;
+  margin: auto;
+}
+.signup-section .inner h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+.signup {
+  margin-top: 50px;
+}
+.intro-text {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.intro-text i {
+  margin-right: 5px;
+  color: #ee6a7b;
+}
+.input-field {
+  margin-bottom: 25px;
+}
+.input-field > span {
+  font-size: 14px;
+  display: inline-block;
+  width: 140px;
+}
+.input-field i:not(.fa-search) {
+  color: #ee6a7b;
+}
+.input-field input[type="text"],
+.input-field input[type="password"],
+.input-field input[type="email"],
+.search-addr-btn {
+  width: 330px;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+}
+.search-addr-btn {
+  background-color: #fff;
+  border: 1px solid #5f0080;
+  color: #5f0080;
+  cursor: pointer;
+}
+.search-addr-btn .fa {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.addr-intro {
+  margin-left: 143px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+.gender-select {
+  display: inline-block;
+  width: 330px;
+  padding: 10px 0;
+}
+input[name="gender"] {
+  display: none;
+}
+.gender-select label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+.gender-select label span {
+  vertical-align: middle;
+}
+.radio-design {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+input[id="male"]:checked + span,
+input[id="female"]:checked + span,
+input[id="none"]:checked + span {
+  border: 7px solid #5f0080;
+}
+.birth-field {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.birth-input-box {
+  display: flex;
+  border: 1px solid #aaa;
+}
+.year,
+.month,
+.day {
+  width: 110px !important;
+  border: none;
+  text-align: center;
+}
+.add-field {
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+}
+.add-field input[id="friend-code"] {
+  display: none;
+}
+.add-field label span {
+  vertical-align: middle;
+}
+input[id="friend-code"]:checked + span {
+  border: 7px solid #5f0080;
+}
+.code-input-box {
+  margin: 30px 0 0 140px;
+  display: none;
+}
+.code-notice {
+  font-size: 14px;
+  color: #333;
+  user-select: none;
+}
+.code-notice:first-of-type {
+  margin-top: 15px;
+}
+.check-notice {
+  margin-left: 160px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+/* Checkbox  */
+.all-check-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+.tos-field input[type="checkbox"] {
+  display: none;
+}
+.tos-field
+  label:not(label[for="allChk"], label[for="chk5"], label[for="chk6"]) {
+  display: block;
+  margin-left: 144px;
+  margin-top: 15px;
+}
+.sub-checkbox {
+  margin-left: 180px;
+  margin-top: 15px;
+  display: flex;
+  gap: 40px;
+}
+.tos-field label[for="chk5"],
+.tos-field label[for="chk6"] {
+  display: inline-block !important;
+}
+.tos-field label span {
+  vertical-align: middle;
+}
+.check-design {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/kurly_none_check.svg) no-repeat center center;
+}
+.tos-field input[type="checkbox"]:checked + .check-design {
+  background-image: url(../images/kurly_check.svg);
+}

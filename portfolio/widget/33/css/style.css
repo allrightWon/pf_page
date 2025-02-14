@@ -1,0 +1,159 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* xeicon CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* font(pretendard) CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.container {
+  width: 730px;
+  padding: 50px;
+  background-color: #121212;
+  border-radius: 10px;
+}
+.container hr {
+  width: 90%;
+  border-color: #00000080;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* sns login-box */
+.social-login {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.social-login h2 {
+  font-size: 32px;
+  margin-top: 10px;
+}
+.social-login a {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #777;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 25px;
+  position: relative;
+}
+.social-login a:hover {
+  border-color: #fff;
+}
+.social-login a:before {
+  font-family: fontawesome;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.social-login a:nth-of-type(1):before {
+  content: "\f1a0";
+}
+.social-login a:nth-of-type(2):before {
+  content: "\f230";
+}
+.social-login a:nth-of-type(3):before {
+  content: "\f179";
+}
+
+/* normal login-box */
+.normal-login {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.normal-login h2 {
+  font-size: 15px;
+  text-align: left;
+}
+.normal-login input[type="text"],
+.normal-login input[type="password"] {
+  width: 100%;
+  padding: 14px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+}
+
+.normal-login input[type="text"]::placeholder,
+.normal-login input[type="password"]::placeholder {
+  color: #bbb;
+  font-size: 16px;
+  opacity: 1;
+  transition: 0.5s;
+}
+.normal-login input[type="text"]:focus::placeholder,
+.normal-login input[type="password"]:focus::placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+.normal-login input[type="text"] {
+}
+.normal-login input[type="password"] {
+  background: url(../images/password_pri.svg) no-repeat center right 10px;
+}
+
+/* signin btn */
+.signin-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px 20px;
+  background-color: #3be477;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+}
+/* password search link */
+.search-pw-link {
+  display: inline-block;
+  margin-top: 35px;
+  text-decoration: underline;
+}
+.search-pw-link:hover {
+  color: #3be477;
+}
+
+/* signup link */
+.signup-link-text {
+  text-align: center;
+  margin-top: 35px;
+  color: #777;
+  font-size: 16px;
+}
+.signup-link-text a {
+  margin-left: 8px;
+  text-decoration: underline;
+}
+.signup-link-text a:hover {
+  color: #3be477;
+}

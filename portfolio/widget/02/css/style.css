@@ -1,0 +1,133 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* xeicon CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* font(pretendard) CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+header {
+  width: 1450px;
+  padding: 20px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #666;
+}
+
+.search-box input {
+  width: 400px;
+  padding: 5px 15px;
+  border: 1px solid #000;
+  outline: none;
+}
+.search-box input::placeholder {
+  color: #000;
+  text-align: right;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+/* Category Box */
+.category-box {
+  width: 1450px;
+  margin: 10px auto;
+}
+.category-box a {
+  display: inline-block;
+  border: 1px solid #000;
+  font-size: 15px;
+  padding: 7px 15px;
+  margin: 8px 5px 5px 0;
+}
+.category-box > a:first-child {
+  font-weight: 600;
+}
+
+/* Product Section */
+.product-container {
+  width: 1450px;
+  margin: auto;
+}
+.product-row {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+.item-card {
+  flex: 1;
+}
+.photo {
+  position: relative;
+  height: 525px;
+}
+.photo img {
+  width: 350px;
+  position: absolute;
+  transition: 0.5s;
+}
+.photo img:nth-of-type(1) {
+  z-index: 1;
+}
+.photo img:nth-of-type(2) {
+}
+.photo:hover img:nth-of-type(1) {
+  opacity: 0;
+}
+.detail {
+  padding: 10px 0 10px 0;
+  position: relative;
+}
+.detail span {
+  display: block;
+}
+.detail .name {
+}
+.detail .name:hover {
+  text-decoration: underline;
+}
+.detail .price {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.detail .bookmark {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.detail .bookmark:before {
+  content: "\f097";
+  font-family: fontawesome;
+}
+.detail .bookmark.active:before {
+  content: "\f02e";
+}

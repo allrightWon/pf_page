@@ -1,0 +1,124 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* xeicon CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* BootStrap CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* font(pretendard) CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+.clip-board {
+  width: 500px;
+  height: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3d9c6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.clip {
+  position: absolute;
+  width: 200px;
+  min-height: 50px;
+
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.clip-top {
+  width: 100px;
+  height: 12px;
+  background-color: #b9b9b9;
+  margin: auto;
+  margin-top: 5px;
+}
+.clip-bot {
+  width: 100%;
+  height: 30px;
+  border: 5px solid #b9b9b9;
+  border-radius: 5px;
+}
+.content {
+  width: 85%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 60px 30px;
+}
+.todo-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.todo-input::placeholder {
+  color: #fff;
+}
+.todo-input,
+.todo-list li {
+  border-radius: 5px;
+}
+.todo-list li {
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.todo-list li.clear {
+  background-color: #ddd;
+}
+.todo-list li.clear span {
+  text-decoration: line-through;
+}
+.todo-list li i {
+  cursor: pointer;
+  position: absolute;
+}
+.todo-list li i:nth-of-type(1) {
+  right: 20px;
+}
+.todo-list li i:nth-of-type(2) {
+  right: 40px;
+}

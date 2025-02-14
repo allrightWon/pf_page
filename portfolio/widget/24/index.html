@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>금주의 추천 도서(탭메뉴 & 슬라이드)</title>
+    <link rel="icon" href="./images/favi-star.png" />
+    <!-- custom.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- jQuery CDN -->
+    <script src="./script/jquery-1.12.4.js" defer></script>
+    <!-- custom.js -->
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">금주의 추천 도서📖</h2>
+      <ul class="this-week-books">
+        <li data-alt="it-tab" class="menu-it active">IT 모바일</li>
+        <li data-alt="self-imp-tab" class="menu-self-imp">자기계발서</li>
+        <li data-alt="essay-tab" class="menu-essay">에세이</li>
+        <li data-alt="novel-tab" class="menu-novel">소설</li>
+        <li data-alt="comics-tab" class="menu-comics">만화</li>
+      </ul>
+      <div class="book-tabs">
+        <div id="it-tab" class="active">
+          <input type="radio" name="it-slide" id="it-slide1" checked />
+          <input type="radio" name="it-slide" id="it-slide2" />
+          <input type="radio" name="it-slide" id="it-slide3" />
+          <input type="radio" name="it-slide" id="it-slide4" />
+          <div class="book-box">
+            <div class="books">
+              <ul>
+                <li>
+                  <a href="#none1"
+                    ><img src="./images/it-books/it-books16.jfif" alt=""
+                  /></a>
+                  <!-- <h2>비전공자를 위한 IT 지식</h2> -->
+                </li>
+                <li>
+                  <a href="#none2"
+                    ><img src="./images/it-books/it-books15.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none3"
+                    ><img src="./images/it-books/it-books02.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none4"
+                    ><img src="./images/it-books/it-books03.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none5"
+                    ><img src="./images/it-books/it-books04.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none6"
+                    ><img src="./images/it-books/it-books05.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none7"
+                    ><img src="./images/it-books/it-books06.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none8"
+                    ><img src="./images/it-books/it-books07.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none9"
+                    ><img src="./images/it-books/it-books08.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none10"
+                    ><img src="./images/it-books/it-books09.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none11"
+                    ><img src="./images/it-books/it-books10.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none12"
+                    ><img src="./images/it-books/it-books11.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none13"
+                    ><img src="./images/it-books/it-books12.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none14"
+                    ><img src="./images/it-books/it-books13.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none15"
+                    ><img src="./images/it-books/it-books14.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none16"
+                    ><img src="./images/it-books/it-books15.jfif" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide-tabs">
+            <label for="it-slide1"></label>
+            <label for="it-slide2"></label>
+            <label for="it-slide3"></label>
+            <label for="it-slide4"></label>
+          </div>
+        </div>
+        <div id="self-imp-tab">
+          <input type="radio" name="imp-slide" id="imp-slide1" checked />
+          <input type="radio" name="imp-slide" id="imp-slide2" />
+          <input type="radio" name="imp-slide" id="imp-slide3" />
+          <input type="radio" name="imp-slide" id="imp-slide4" />
+          <div class="book-box">
+            <div class="books">
+              <ul>
+                <li>
+                  <a href="#none1"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book01.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none2"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book02.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none3"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book03.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none4"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book04.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none5"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book05.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none6"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book06.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none7"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book07.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none8"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book08.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none9"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book09.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none10"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book10.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none11"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book11.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none12"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book12.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none13"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book13.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none14"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book14.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none15"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book15.jfif"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none16"
+                    ><img
+                      src="./images/self-imp-books/self-imp-book16.jfif"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide-tabs">
+            <label for="imp-slide1"></label>
+            <label for="imp-slide2"></label>
+            <label for="imp-slide3"></label>
+            <label for="imp-slide4"></label>
+          </div>
+        </div>
+        <div id="essay-tab">
+          <input type="radio" name="essay-slide" id="essay-slide1" checked />
+          <input type="radio" name="essay-slide" id="essay-slide2" />
+          <input type="radio" name="essay-slide" id="essay-slide3" />
+          <input type="radio" name="essay-slide" id="essay-slide4" />
+          <div class="book-box">
+            <div class="books">
+              <ul>
+                <li>
+                  <a href="#none1"
+                    ><img src="./images/essay/essay01.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none2"
+                    ><img src="./images/essay/essay02.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none3"
+                    ><img src="./images/essay/essay03.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none4"
+                    ><img src="./images/essay/essay04.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none5"
+                    ><img src="./images/essay/essay05.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none6"
+                    ><img src="./images/essay/essay06.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none7"
+                    ><img src="./images/essay/essay07.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none8"
+                    ><img src="./images/essay/essay08.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none9"
+                    ><img src="./images/essay/essay09.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none10"
+                    ><img src="./images/essay/essay10.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none11"
+                    ><img src="./images/essay/essay11.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none12"
+                    ><img src="./images/essay/essay12.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none13"
+                    ><img src="./images/essay/essay13.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none14"
+                    ><img src="./images/essay/essay14.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none15"
+                    ><img src="./images/essay/essay15.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none16"
+                    ><img src="./images/essay/essay16.jfif" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide-tabs">
+            <label for="essay-slide1"></label>
+            <label for="essay-slide2"></label>
+            <label for="essay-slide3"></label>
+            <label for="essay-slide4"></label>
+          </div>
+        </div>
+        <div id="novel-tab">
+          <input type="radio" name="novel-slide" id="novel-slide1" checked />
+          <input type="radio" name="novel-slide" id="novel-slide2" />
+          <input type="radio" name="novel-slide" id="novel-slide3" />
+          <input type="radio" name="novel-slide" id="novel-slide4" />
+          <div class="book-box">
+            <div class="books">
+              <ul>
+                <li>
+                  <a href="#none1"
+                    ><img src="./images/novel/novel01.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none2"
+                    ><img src="./images/novel/novel02.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none3"
+                    ><img src="./images/novel/novel03.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none4"
+                    ><img src="./images/novel/novel04.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none5"
+                    ><img src="./images/novel/novel05.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none6"
+                    ><img src="./images/novel/novel06.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none7"
+                    ><img src="./images/novel/novel07.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none8"
+                    ><img src="./images/novel/novel08.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none9"
+                    ><img src="./images/novel/novel09.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none10"
+                    ><img src="./images/novel/novel10.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none11"
+                    ><img src="./images/novel/novel11.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none12"
+                    ><img src="./images/novel/novel12.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none13"
+                    ><img src="./images/novel/novel13.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none14"
+                    ><img src="./images/novel/novel14.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none15"
+                    ><img src="./images/novel/novel15.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none16"
+                    ><img src="./images/novel/novel16.jfif" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide-tabs">
+            <label for="novel-slide1"></label>
+            <label for="novel-slide2"></label>
+            <label for="novel-slide3"></label>
+            <label for="novel-slide4"></label>
+          </div>
+        </div>
+        <div id="comics-tab">
+          <input type="radio" name="comics-slide" id="comics-slide1" checked />
+          <input type="radio" name="comics-slide" id="comics-slide2" />
+          <input type="radio" name="comics-slide" id="comics-slide3" />
+          <input type="radio" name="comics-slide" id="comics-slide4" />
+          <div class="book-box">
+            <div class="books">
+              <ul>
+                <li>
+                  <a href="#none1"
+                    ><img src="./images/comics/comics01.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none2"
+                    ><img src="./images/comics/comics02.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none3"
+                    ><img src="./images/comics/comics03.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none4"
+                    ><img src="./images/comics/comics04.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none5"
+                    ><img src="./images/comics/comics05.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none6"
+                    ><img src="./images/comics/comics06.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none7"
+                    ><img src="./images/comics/comics07.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none8"
+                    ><img src="./images/comics/comics08.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none9"
+                    ><img src="./images/comics/comics09.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none10"
+                    ><img src="./images/comics/comics10.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none11"
+                    ><img src="./images/comics/comics11.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none12"
+                    ><img src="./images/comics/comics12.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none13"
+                    ><img src="./images/comics/comics13.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none14"
+                    ><img src="./images/comics/comics14.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none15"
+                    ><img src="./images/comics/comics15.jfif" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#none16"
+                    ><img src="./images/comics/comics16.jfif" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide-tabs">
+            <label for="comics-slide1"></label>
+            <label for="comics-slide2"></label>
+            <label for="comics-slide3"></label>
+            <label for="comics-slide4"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

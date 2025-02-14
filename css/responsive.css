@@ -1,0 +1,211 @@
+/* Responsive : Mobile */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    overflow: auto;
+  }
+  :root {
+    --main-title-size: 3rem;
+    --sub-title-size: 1.4rem;
+    --section-title-size: 2.2rem;
+    --big-text: 1.8rem;
+  }
+  /* Common CSS */
+  section {
+    padding: 0 15px;
+  }
+  .inner {
+    width: 100%;
+  }
+  #wrap {
+    overflow: hidden;
+  }
+  /* Cursor Effect */
+  .cursor {
+    display: none;
+  }
+  /* Page Navigation */
+  .page-nav {
+    display: none;
+  }
+  .mo-page-nav {
+    display: block;
+  }
+  /* Header */
+  header .inner {
+    padding: 0 15px;
+  }
+  .logo-img {
+    width: 200px;
+  }
+  .mo-hamburger {
+    display: block;
+  }
+  /* Section : Intro */
+  .intro-content {
+    height: 90vh;
+  }
+  .intro-text {
+    top: 50%;
+    text-align: center;
+  }
+  .intro-text h1::after {
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+  }
+  .intro-image {
+    display: none;
+  }
+  .intro-rolling-banner {
+    padding: 15px 0;
+  }
+  /* Section : About */
+  .about-section {
+    height: 100%;
+    padding: 15px;
+    margin-top: 50px;
+  }
+  .about-me {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .greeting {
+    font-size: var(--medium-text);
+  }
+  .profile-details b {
+    font-size: 1rem;
+  }
+  /* Section : Skill */
+  .skill-content .heading {
+    margin: 50px 0;
+  }
+  .skill-content .heading h2 {
+    font-size: var(--section-title-size);
+  }
+  .skill-content .heading p {
+    display: none;
+  }
+  .snt-list {
+    grid-template-columns: repeat(1, 330px);
+    grid-template-rows: repeat(6, 330px);
+  }
+  /* Section : Portfolio */
+  .portfolio-section h2 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .website-portfolio {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .website {
+    width: 100%;
+    height: 80vh;
+  }
+  .website::after {
+    font-size: var(--main-title-size);
+    border-width: 5px;
+    top: 0;
+    right: 30px;
+  }
+  .website-thumb img {
+    width: 300px;
+  }
+  .website-desc {
+    padding: 25px;
+  }
+  .website-desc b {
+    font-size: var(--medium-text);
+  }
+  /* Widget Portfolio */
+  .widget-wrap {
+    padding: 50px 0;
+  }
+  .widget-list {
+    grid-template-columns: repeat(1, 300px);
+  }
+  /* Section : Epilogue */
+  .epilogue-section h2 {
+    font-size: var(--big-text);
+  }
+  .epilogue-section p {
+    font-size: 1rem;
+  }
+}
+/* Responsive : Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+  :root {
+    --section-title-big-size: 6rem;
+  }
+  /* Common CSS */
+  .inner {
+    width: 100%;
+  }
+  /* Cursor Effect */
+  .cursor {
+    display: none;
+  }
+  /* Header */
+  header .inner {
+    padding: 15px 50px;
+  }
+  /* Section : Intro */
+  .intro-content {
+    height: 90vh;
+  }
+  .intro-text {
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  .intro-text h1::after {
+    left: 35px;
+  }
+  .intro-image {
+    display: none;
+  }
+  /* Section : About */
+  .about-section {
+    height: 100%;
+  }
+  .about-me {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Section : Skill */
+  .snt-list {
+    grid-template-columns: repeat(2, 330px);
+    grid-template-rows: repeat(3, 330px);
+  }
+  /* Section : Portfolio */
+  .portfolio-section {
+    padding: 50px;
+  }
+  .portfolio-section h2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .website-portfolio {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .website {
+    width: 100%;
+    height: 90vh;
+  }
+  .website::after {
+    top: 0;
+  }
+  .widget-list {
+    grid-template-columns: repeat(2, 300px);
+  }
+}

@@ -1,0 +1,231 @@
+/* fontawesome CDN */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* xeicon CDN */
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* font(pretendard) CDN */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+  color: #5c5c5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: 1000px;
+  background-color: #fff;
+  border: 1px solid #33333336;
+  border-right: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.title {
+  text-align: center;
+}
+
+.this-week-books {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.this-week-books li {
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.this-week-books li:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+.this-week-books li.active {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.book-tabs {
+}
+.book-tabs > div {
+  height: 500px;
+  display: none;
+  position: relative;
+}
+.book-tabs > div.active {
+  display: block;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.book-box {
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.books {
+  width: 400%;
+  position: absolute;
+  font-size: 0;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.books ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.books ul li {
+  flex: 1;
+  border-right: none;
+  padding: 10px;
+}
+.books ul li a {
+}
+.books img {
+  width: 100%;
+  height: 100%;
+}
+/* label public css */
+.slide-tabs {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+}
+.slide-tabs label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* it-book label */
+input[id="it-slide1"]:checked ~ .book-box .books {
+  left: 0;
+}
+input[id="it-slide2"]:checked ~ .book-box .books {
+  left: -800px;
+}
+input[id="it-slide3"]:checked ~ .book-box .books {
+  left: -1600px;
+}
+input[id="it-slide4"]:checked ~ .book-box .books {
+  left: -2400px;
+}
+input[id="it-slide1"]:checked ~ .slide-tabs label[for="it-slide1"],
+input[id="it-slide2"]:checked ~ .slide-tabs label[for="it-slide2"],
+input[id="it-slide3"]:checked ~ .slide-tabs label[for="it-slide3"],
+input[id="it-slide4"]:checked ~ .slide-tabs label[for="it-slide4"] {
+  background-color: crimson;
+}
+
+/* self-imp-book label */
+input[id="imp-slide1"]:checked ~ .book-box .books {
+  left: 0;
+}
+input[id="imp-slide2"]:checked ~ .book-box .books {
+  left: -800px;
+}
+input[id="imp-slide3"]:checked ~ .book-box .books {
+  left: -1600px;
+}
+input[id="imp-slide4"]:checked ~ .book-box .books {
+  left: -2400px;
+}
+input[id="imp-slide1"]:checked ~ .slide-tabs label[for="imp-slide1"],
+input[id="imp-slide2"]:checked ~ .slide-tabs label[for="imp-slide2"],
+input[id="imp-slide3"]:checked ~ .slide-tabs label[for="imp-slide3"],
+input[id="imp-slide4"]:checked ~ .slide-tabs label[for="imp-slide4"] {
+  background-color: crimson;
+}
+
+/* essay-book label */
+input[id="essay-slide1"]:checked ~ .book-box .books {
+  left: 0;
+}
+input[id="essay-slide2"]:checked ~ .book-box .books {
+  left: -800px;
+}
+input[id="essay-slide3"]:checked ~ .book-box .books {
+  left: -1600px;
+}
+input[id="essay-slide4"]:checked ~ .book-box .books {
+  left: -2400px;
+}
+input[id="essay-slide1"]:checked ~ .slide-tabs label[for="essay-slide1"],
+input[id="essay-slide2"]:checked ~ .slide-tabs label[for="essay-slide2"],
+input[id="essay-slide3"]:checked ~ .slide-tabs label[for="essay-slide3"],
+input[id="essay-slide4"]:checked ~ .slide-tabs label[for="essay-slide4"] {
+  background-color: crimson;
+}
+
+/* novel-book label */
+input[id="novel-slide1"]:checked ~ .book-box .books {
+  left: 0;
+}
+input[id="novel-slide2"]:checked ~ .book-box .books {
+  left: -800px;
+}
+input[id="novel-slide3"]:checked ~ .book-box .books {
+  left: -1600px;
+}
+input[id="novel-slide4"]:checked ~ .book-box .books {
+  left: -2400px;
+}
+input[id="novel-slide1"]:checked ~ .slide-tabs label[for="novel-slide1"],
+input[id="novel-slide2"]:checked ~ .slide-tabs label[for="novel-slide2"],
+input[id="novel-slide3"]:checked ~ .slide-tabs label[for="novel-slide3"],
+input[id="novel-slide4"]:checked ~ .slide-tabs label[for="novel-slide4"] {
+  background-color: crimson;
+}
+
+/* comics-book label */
+input[id="comics-slide1"]:checked ~ .book-box .books {
+  left: 0;
+}
+input[id="comics-slide2"]:checked ~ .book-box .books {
+  left: -800px;
+}
+input[id="comics-slide3"]:checked ~ .book-box .books {
+  left: -1600px;
+}
+input[id="comics-slide4"]:checked ~ .book-box .books {
+  left: -2400px;
+}
+input[id="comics-slide1"]:checked ~ .slide-tabs label[for="comics-slide1"],
+input[id="comics-slide2"]:checked ~ .slide-tabs label[for="comics-slide2"],
+input[id="comics-slide3"]:checked ~ .slide-tabs label[for="comics-slide3"],
+input[id="comics-slide4"]:checked ~ .slide-tabs label[for="comics-slide4"] {
+  background-color: crimson;
+}

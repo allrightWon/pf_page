@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurly</title>
+    <link rel="icon" href="./images/favi-star.png" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- jQuery CDN -->
+    <script src="./script/jquery-1.12.4.js" defer></script>
+    <!-- script.js -->
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- ##### Header ##### -->
+      <header>
+        <div class="header-inner">
+          <div class="header-top">
+            <div class="header-links">
+              <a href="#">회원가입</a>
+              <a href="#">로그인</a>
+              <a href="#">고객센터</a>
+            </div>
+          </div>
+          <div class="header-mid">
+            <div class="logo-and-tab">
+              <div class="logo">
+                <a href="#"><img src="./images/kurly_logo.svg" alt="" /></a>
+              </div>
+              <div class="kurly-tab">
+                <button class="tab-change-btn active">마켓컬리</button>
+                <button class="tab-change-btn">뷰티컬리</button>
+              </div>
+            </div>
+            <div class="search-box">
+              <input
+                class="header-search"
+                type="text"
+                placeholder="검색어를 입력해주세요"
+              />
+            </div>
+            <div class="header-links2">
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="header-bot">
+            <div class="header-category">
+              <a href="#">카테고리</a>
+            </div>
+            <nav class="header-nav">
+              <ul>
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">알뜰쇼핑</a></li>
+                <li><a href="#">특가/혜택</a></li>
+              </ul>
+            </nav>
+            <div class="delivery-ann">
+              <a href="#"><span>샛별ㆍ하루</span> 배송안내</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ##### Section : Signup  ##### -->
+      <section class="signup-section">
+        <div class="inner">
+          <h2>회원가입</h2>
+          <div class="signup">
+            <span class="intro-text"><i>*</i>필수입력사항</span>
+            <form class="signup-form">
+              <div class="input-field id-field">
+                <span>아이디<i>*</i></span>
+                <input type="text" placeholder="아이디를 입력해주세요" />
+              </div>
+              <div class="input-field password-field">
+                <span>비밀번호<i>*</i></span>
+                <input type="password" placeholder="비밀번호를 입력해주세요" />
+              </div>
+              <div class="input-field password-field">
+                <span>비밀번호확인<i>*</i></span>
+                <input
+                  type="password"
+                  placeholder="비밀번호를 한번 더 입력해주세요"
+                />
+              </div>
+              <div class="input-field name-field">
+                <span>이름<i>*</i></span>
+                <input type="text" placeholder="이름을 입력해주세요" />
+              </div>
+              <div class="input-field email-field">
+                <span>이메일<i>*</i></span>
+                <input type="email" placeholder="예: marketKurly" />
+              </div>
+              <div class="input-field hp-field">
+                <span>휴대폰<i>*</i></span>
+                <input type="text" placeholder="숫자만 입력해주세요" />
+                <button class="get-hp-code-btn" type="button">
+                  인증번호 받기
+                </button>
+              </div>
+              <div class="input-field address-field">
+                <span>주소<i>*</i></span>
+                <button class="search-addr-btn" type="button">
+                  <i class="fa fa-search"></i>주소 검색
+                </button>
+                <p class="addr-intro">
+                  배송지에 따라 상품 정보가 달라질 수 있습니다.
+                </p>
+              </div>
+              <div class="input-field gender-field">
+                <span>성별</span>
+                <div class="gender-select">
+                  <label for="male">
+                    <input type="radio" name="gender" id="male" />
+                    <span class="radio-design"></span>
+                    <span>남자</span>
+                  </label>
+                  <label for="female">
+                    <input type="radio" name="gender" id="female" />
+                    <span class="radio-design"></span>
+                    <span>여자</span>
+                  </label>
+                  <label for="none">
+                    <input type="radio" name="gender" id="none" />
+                    <span class="radio-design"></span>
+                    <span>선택안함</span>
+                  </label>
+                </div>
+              </div>
+              <div class="input-field birth-field">
+                <span>생년월일</span>
+                <div class="birth-input-box">
+                  <input
+                    class="year"
+                    type="text"
+                    placeholder="YYYY"
+                    maxlength="4"
+                  />
+                  <input
+                    class="month"
+                    type="text"
+                    placeholder="MM"
+                    maxlength="2"
+                  />
+                  <input
+                    class="day"
+                    type="text"
+                    placeholder="DD"
+                    maxlength="2"
+                  />
+                </div>
+              </div>
+              <div class="input-field add-field">
+                <span>추가입력사항</span>
+                <label for="friend-code">
+                  <input
+                    class="friend-code"
+                    type="radio"
+                    name="friend-code"
+                    id="friend-code"
+                  />
+                  <span class="radio-design"></span>
+                  <span>친구초대 추천인 아이디</span>
+                </label>
+                <div class="code-input-box">
+                  <div class="code-input">
+                    <input type="text" placeholder="추천인 아이디 입력" />
+                    <button class="check-code-btn" type="button">
+                      아이디 확인
+                    </button>
+                  </div>
+                  <p class="code-notice">
+                    가입 후 7일 이내 첫 주문 배송완료 시, 친구초대 적립금이
+                    지급됩니다.
+                  </p>
+                  <p class="code-notice">
+                    ID 입력시, 대소문자 및 띄어쓰기에 유의 부탁드립니다.
+                  </p>
+                  <p class="code-notice">가입 이후는 수정이 불가능합니다.</p>
+                </div>
+              </div>
+              <div class="input-field tos-field">
+                <span>이용약관동의<i>*</i></span>
+                <label for="allChk">
+                  <input type="checkbox" name="allChk" id="allChk" />
+                  <span class="check-design"></span>
+                  <span class="all-check-text">전체 동의합니다</span>
+                </label>
+                <p class="check-notice">
+                  선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를
+                  이용할 수 있습니다.
+                </p>
+                <label for="chk1">
+                  <input type="checkbox" name="chk" id="chk1" />
+                  <span class="check-design"></span>
+                  <span class="check-text">이용약관 동의 <em>(필수)</em></span>
+                </label>
+                <label for="chk2">
+                  <input type="checkbox" name="chk" id="chk2" />
+                  <span class="check-design"></span>
+                  <span class="check-text"
+                    >개인정보 수집ㆍ이용 동의 <em>(필수)</em></span
+                  >
+                </label>
+                <label for="chk3">
+                  <input type="checkbox" name="chk" id="chk3" />
+                  <span class="check-design"></span>
+                  <span class="check-text"
+                    >개인정보 수집ㆍ이용 동의 <em>(선택)</em></span
+                  >
+                </label>
+                <label for="chk4">
+                  <input type="checkbox" name="chk" id="chk4" />
+                  <span class="check-design"></span>
+                  <span class="check-text"
+                    >무료배송, 할인쿠폰 등 혜택/정보 수신 동의
+                    <em>(선택)</em></span
+                  >
+                </label>
+                <div class="sub-checkbox">
+                  <label for="chk5">
+                    <input type="checkbox" name="chk" id="chk5" />
+                    <span class="check-design"></span>
+                    <span class="check-text">SMS</span>
+                  </label>
+                  <label for="chk6">
+                    <input type="checkbox" name="chk" id="chk6" />
+                    <span class="check-design"></span>
+                    <span class="check-text">이메일</span>
+                  </label>
+                </div>
+                <label for="chk7">
+                  <input type="checkbox" name="chk" id="chk7" />
+                  <span class="check-design"></span>
+                  <span class="check-text"
+                    >본인은 만 14세 이상입니다. <em>(필수)</em></span
+                  >
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>   
