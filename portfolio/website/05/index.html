@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Altools | 내 PC 필수품</title>
-    <link rel="icon" href="./images/favi.png" />
-    <!-- Custom CSS -->
+    <title>Firefox-Mozilla</title>
+    <link rel="icon" href="./images/fiexfox_favi.png" />
+    <!-- Custom css -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <!-- jQuery CDN -->
     <script src="./script/jquery-1.12.4.js" defer></script>
-    <!-- Slick.js -->
-    <link rel="stylesheet" href="./script/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./script/slick/slick.css" />
-    <script src="./script/slick/slick.js" defer></script>
     <!-- Custom js -->
     <script src="./script/script.js" defer></script>
   </head>
@@ -20,797 +17,536 @@
     <div id="wrap">
       <!-- ########## Header ########## -->
       <header>
-        <div class="inner">
-          <div class="logo">
-            <img
-              src="./images/header/header_logo.svg"
-              alt="알툴즈 로고 이미지"
-            />
-          </div>
-          <nav class="header-nav">
-            <div class="download-menu">
-              <div class="dw-link dw-tool">
-                <h3>Tool</h3>
-                <div class="dw-list">
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon01.png"
-                      alt="알집 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알집</h4>
-                      <p>전국민 압축프로그램</p>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon02.png"
-                      alt="알캡처 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알캡처</h4>
-                      <p>쉽고 빠른 화면 캡처</p>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon03.png"
-                      alt="알드라이브 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알드라이브</h4>
-                      <p>편리한 파일 전송 클라이언트</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="dw-link dw-contents">
-                <h3>Contents</h3>
-                <div class="dw-list">
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon05.png"
-                      alt="알씨 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알씨</h4>
-                      <p>이미지 뷰어/사진 편집 프로그램</p>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon06.png"
-                      alt="알PDF 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알PDF</h4>
-                      <p>PDF 뷰어/리더,PDF 변환/편집</p>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon07.png"
-                      alt="알송 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알송</h4>
-                      <p>온라인 음악가사 플레이어</p>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon08.png"
-                      alt="앨런 Beta 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>앨런 Beta</h4>
-                      <p>일잘러를 위한 AI 파트너</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="dw-link dw-mobile">
-                <h3>Mobile</h3>
-                <div class="dw-list">
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon09.png"
-                      alt="알집 모바일 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알집 모바일</h4>
-                      <p>압축 지원 파일 탐색 관리자</p>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon10.png"
-                      alt="알송 모바일 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알송 모바일</h4>
-                      <p>음악과 가사를 동시에</p>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon11.png"
-                      alt="알약M 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알약M</h4>
-                      <p>스마트폰의 모든 처방</p>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon12.png"
-                      alt="앨런 Beta 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>피크닉</h4>
-                      <p>맑은 하늘 필터 카메라</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="dw-link dw-security">
-                <h3>Security</h3>
-                <div class="dw-list">
-                  <a href="#">
-                    <img
-                      class="dw-icon"
-                      src="./images/header/download_menu/dw_icon04.png"
-                      alt="알약 아이콘"
-                    />
-                    <div class="dw-desc">
-                      <h4>알약</h4>
-                      <p>전국민 백신 프로그램</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <a class="tools-pack-link" href="#">
-                <img
-                  src="./images/header/download_menu/tools_pack_bg.png"
-                  alt=""
-                />
-                <span>알툴즈 모든 제품을 한 번에.</span>
-                <span>알툴즈 통합 팩</span>
-              </a>
-            </div>
-            <ul>
-              <li><a class="nav-drop nav-dw" href="#">알툴즈 다운로드</a></li>
-              <li><a href="#">알툴즈 AD-ZERO</a></li>
-              <li><a href="#">비즈니스 구매</a></li>
-              <li class="nav-cs">
-                <a class="nav-drop" href="#">고객센터</a>
-                <div class="cs-drop">
-                  <a href="#">자주하는 질문</a>
-                  <a href="#">1:1 문의하기</a>
-                  <a href="#">공지사항</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          <div class="ad-and-login">
-            <div class="header-ad">
+        <div class="header-top">
+          <div class="inner">
+            <div class="logo-nav-box">
               <a href="#">
                 <img
-                  src="./images/header/header_ad_img.png"
-                  alt="에이쁠포인트 앱 출시 광고 이미지"
-                />
+                  class="mozilla-logo"
+                  src="./images/header/mozilla_logo.svg"
+                  alt="Mozilla 로고 이미지"
+              /></a>
+              <nav class="header-nav pc">
+                <a href="#">FireFox 브라우저</a>
+                <a href="#">제품</a>
+                <a href="#">만드는 사람들</a>
+                <a href="#">혁신</a>
+              </nav>
+            </div>
+            <a href="#" class="header-download-btn pc"> Firefox 다운로드 </a>
+            <!-- Mobile Nav -->
+            <div class="mobile-nav-open">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mobile-nav">
+              <a href="#" class="header-download-btn mobile">
+                Firefox 다운로드
+              </a>
+              <nav class="header-nav mobile">
+                <a href="#">FireFox 브라우저</a>
+                <a href="#">제품</a>
+                <a href="#">만드는 사람들</a>
+                <a href="#">혁신</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="inner">
+            <div class="firefox-logo">
+              <a href="#">
+                <img src="./images/header/firefox_logo.svg" alt="" />
+                Firefox
               </a>
             </div>
-            <div class="login">
-              <a class="login-link" href="#">로그인</a>
+            <div class="header-links">
+              <a href="#">데스크톱</a>
+              <a href="#">모바일</a>
+              <a href="#">기능</a>
+              <a href="#">브라우저 비교</a>
+              <a href="#">더보기</a>
+            </div>
+            <!-- Mobile Header Links -->
+            <div class="mobile-header-links-open">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+            <div class="mobile-header-links">
+              <a href="#">데스크톱</a>
+              <a href="#">모바일</a>
+              <a href="#">기능</a>
+              <a href="#">브라우저 비교</a>
+              <a href="#">더보기</a>
             </div>
           </div>
         </div>
       </header>
       <!-- ########## Main ########## -->
       <main>
-        <section class="main-slide-section">
+        <!-- ##### Section : Hero ##### -->
+        <section class="hero">
           <div class="inner">
-            <ul class="main-slide">
-              <li class="m-slide m-slide01">
-                <h2>다양한 캡처는 기본, <br />간편한 편집까지</h2>
+            <div class="hero-content-container">
+              <div class="heading">
+                <h1>Firefox Browser</h1>
+                <h2>여러분에게 중요한 것을 먼저 생각하는 브라우저</h2>
                 <p>
-                  크롭, 모자이크, AI 배경 제거 등 신규 편집 기능이 추가된<br />알캡처
-                  3.0을 지금 바로 사용해 보세요.
+                  광고주를 위한 복잡한 개인 정보 보호 정책이나 백도어가
+                  없습니다. 여러분을 상품으로 취급하는 브라우저가 아닙니다.
                 </p>
-                <a class="read-more" href="#">알캡처 자세히보기</a>
-              </li>
-              <li class="m-slide m-slide02">
-                <h2>자유로운 편집과<br />문서 포맷 변환</h2>
-                <p>
-                  제한이 많던 PDF 문서,<br />
-                  원하는 문서 형식 변환과 편집을 손쉽게!
-                </p>
-                <a class="read-more" href="#">알PDF 자세히보기</a>
-              </li>
-              <li class="m-slide m-slide03">
-                <h2>알씨의 새로운 기능!<br />AI 배경 제거</h2>
-                <p>
-                  AI로 사진의 불필요한 배경을 제거하고<br />원하는 영역만 골라서
-                  저장해요.
-                </p>
-                <a class="read-more" href="#">알씨 자세히보기</a>
-              </li>
-              <li class="m-slide m-slide04">
-                <h2>
-                  알툴즈를 더 쉽게.<br />
-                  내 PC 전용 매니저
-                </h2>
-                <p>
-                  다양한 알툴즈의 최신 꿀기능을 놓치지 않도록<br />알매니저가
-                  알아서 관리할게요.
-                </p>
-                <a class="read-more" href="#">알매니저 자세히보기</a>
-              </li>
-            </ul>
+              </div>
+              <a href="#" class="download-btn">Firefox 다운로드</a>
+              <div class="hero-links">
+                <a href="#">Firefox 개인정보 보호정책</a>
+                <a href="#">다운로드 선택 및 기타 언어</a>
+                <a href="#">Firefox Browser 도움말</a>
+              </div>
+            </div>
+            <div class="hero-image-container">
+              <img src="./images/section_hero/hero_section_img.png" alt="" />
+            </div>
           </div>
         </section>
-        <section class="products-list-section">
-          <div class="inner">
-            <ul class="pr-list">
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/products_list_section/product_img1.png"
-                    alt="알툴즈 통합팩 이미지"
-                  />
-                  <div class="pr-info">
-                    <span class="pr-name">알툴즈 통합팩</span>
-                    <span class="pr-desc">내 PC사용을 간편하고 편리하게</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/products_list_section/product_img2.png"
-                    alt="알집 이미지"
-                  />
-                  <div class="pr-info">
-                    <span class="pr-name">알집</span>
-                    <span class="pr-desc">전국민 압축 프로그램</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/products_list_section/product_img3.png"
-                    alt="알약 이미지"
-                  />
-                  <div class="pr-info">
-                    <span class="pr-name">알약</span>
-                    <span class="pr-desc">전국민 백신 프로그램</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/products_list_section/product_img4.png"
-                    alt="알씨 이미지"
-                  />
-                  <div class="pr-info">
-                    <span class="pr-name">알씨</span>
-                    <span class="pr-desc">이미지 뷰어, 사진 편집</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/products_list_section/product_img5.png"
-                    alt="알캡처 이미지"
-                  />
-                  <div class="pr-info">
-                    <span class="pr-name">알캡처</span>
-                    <span class="pr-desc">쉽고 빠른 화면 캡처</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/products_list_section/product_img6.png"
-                    alt="알PDF 이미지"
-                  />
-                  <div class="pr-info">
-                    <span class="pr-name">알PDF</span>
-                    <span class="pr-desc">PDF 뷰어/리더, PDF 변환/편집</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/products_list_section/product_img7.png"
-                    alt="알송 이미지"
-                  />
-                  <div class="pr-info">
-                    <span class="pr-name">알송</span>
-                    <span class="pr-desc">온라인 음악가사 플레이어</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/products_list_section/product_img8.png"
-                    alt="알드라이브 이미지"
-                  />
-                  <div class="pr-info">
-                    <span class="pr-name">알드라이브</span>
-                    <span class="pr-desc">쉽고 편리한 파일 전송</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <!-- ##### Section : Banner-Message ##### -->
+        <section class="banner-message">
+          <h2>
+            여러분이 온라인에서 무엇을 하든지 Firefox Browser는 지켜보지
+            않습니다!
+          </h2>
         </section>
-        <section class="premium-service-section">
+        <!-- ##### Section : AD-Block ##### -->
+        <section class="ad-block common">
           <div class="inner">
-            <div>
+            <div class="image-container">
+              <img
+                src="./images/section_adblock/adblock_section_img.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content-container">
               <h2>
-                광고 없이 쾌적하게<br />알툴즈의 구독서비스를 확인해보세요.
+                저희는 광고 추적기를 차단합니다. 여러분은 인터넷을 더 빨리
+                탐험할 수 있습니다.
               </h2>
-              <a class="premium-link" href="#">알툴즈 AD-ZERO</a>
+              <p>
+                온라인 광고는 주의를 산만하게 하고 웹 페이지 로딩 속도를 느리게
+                만듭니다. 광고에 있는 추적기는 온라인에서 이루어지는 여러분의
+                모든 활동을 감시합니다. Firefox Browser는 대부분의 추적기를
+                자동으로 차단하므로 데이터 보안에 뛰어납니다.
+              </p>
             </div>
           </div>
         </section>
-        <section class="business-product-section">
+        <!-- ##### Section : Compatibility ##### -->
+        <section class="compatibility common">
           <div class="inner">
-            <div>
-              <h2>
-                알툴즈 기업용, 알약 기업용 제품의<br />라이선스를 확인하세요.
-              </h2>
-              <a class="business-pr-link" href="#">비즈니스 구매 자세히보기</a>
+            <div class="content-container">
+              <h2>모두를 위한 Firefox</h2>
+              <p>
+                Firefox는 90 개 이상의 언어로 제공되며 Windows, Mac 및 Linux
+                시스템과 호환됩니다. 무엇을 하든지 어디에 있는지 문제없이 사용
+                가능합니다. 최상의 경험을 위해 여러분의 운영 체제가 최신
+                상태인지도 늘 확인하세요.
+              </p>
+              <a href="#" class="blue-color-text">시스템 요구 사항</a>
+            </div>
+            <div class="image-container">
+              <img
+                src="./images/section_compatibility/section_compatibility_img.svg"
+                alt=""
+              />
             </div>
           </div>
         </section>
-        <section class="best-product-section">
-          <div class="best-pr-inner">
-            <h2>빠르고 간편한 전국민 PC 필수품, 알툴즈</h2>
-            <div class="best-pr">
-              <ul class="best-pr-row best-pr-row1">
-                <li>
-                  <a href="#">
-                    <img
-                      class="best-pr-bg"
-                      src="./images/best_product_section/best_pr_bg1.png"
-                      alt=""
-                    />
-                    <div class="best-pr-desc">
-                      <div>
-                        <img
-                          class="best-pr-icon"
-                          src="./images/products_list_section/product_img1.png"
-                          alt="알툴즈 통합팩 이미지"
-                        />
-                        <h3>알툴즈 통합팩</h3>
-                      </div>
-                      <p>
-                        내 PC 사용을 좀 더 간편하고 편리하게! 알툴즈 통합팩
-                        한번의 설치로 내 PC에 필요한 모든 것이 준비됩니다.
-                      </p>
-                      <span>자세히보기</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      class="best-pr-bg"
-                      src="./images/best_product_section/best_pr_bg2.png"
-                      alt=""
-                    />
-                    <div class="best-pr-desc">
-                      <div>
-                        <img
-                          class="best-pr-icon"
-                          src="./images/products_list_section/product_img2.png"
-                          alt="알집 이미지"
-                        />
-                        <h3>알집</h3>
-                      </div>
-                      <p>
-                        다양한 압축파일 포맷 지원으로 파일 압축하기와 압축풀기에
-                        뛰어난 무료 압축프로그램 입니다.
-                      </p>
-                      <span>자세히보기</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      class="best-pr-bg"
-                      src="./images/best_product_section/best_pr_bg3.png"
-                      alt=""
-                    />
-                    <div class="best-pr-desc">
-                      <div>
-                        <img
-                          class="best-pr-icon"
-                          src="./images/products_list_section/product_img3.png"
-                          alt="알약 이미지"
-                        />
-                        <h3>알약</h3>
-                      </div>
-                      <p>
-                        전국민 백신 프로그램 알약! 똑똑한 백신 프로그램 알약으로
-                        바이러스, 악성코드를 검사하고 제거해보세요.
-                      </p>
-                      <span>자세히보기</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      class="best-pr-bg"
-                      src="./images/best_product_section/best_pr_bg4.png"
-                      alt=""
-                    />
-                    <div class="best-pr-desc">
-                      <div>
-                        <img
-                          class="best-pr-icon"
-                          src="./images/products_list_section/product_img4.png"
-                          alt="알씨 이미지"
-                        />
-                        <h3>알씨</h3>
-                      </div>
-                      <p>
-                        알씨는 사진 편집부터 동영상 만들기, 사진 포먓 변환,
-                        자동회전, 일괄편집, 사진 꾸미기 등 편리한 기능을
-                        제공하는 이미지 뷰어 프로그램입니다.
-                      </p>
-                      <span>자세히보기</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <ul class="best-pr-row best-pr-row2">
-                <li>
-                  <a href="#">
-                    <img
-                      class="best-pr-bg"
-                      src="./images/best_product_section/best_pr_bg5.png"
-                      alt=""
-                    />
-                    <div class="best-pr-desc">
-                      <div>
-                        <img
-                          class="best-pr-icon"
-                          src="./images/products_list_section/product_img5.png"
-                          alt="알캡처 이미지"
-                        />
-                        <h3>알캡처</h3>
-                      </div>
-                      <p>
-                        모니터 화면 안의 무엇이든 원하는 순간에 보이는 그대로
-                        캡처해주는 화면 캡쳐 프로그램입니다.
-                      </p>
-                      <span>자세히보기</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      class="best-pr-bg"
-                      src="./images/best_product_section/best_pr_bg6.png"
-                      alt=""
-                    />
-                    <div class="best-pr-desc">
-                      <div>
-                        <img
-                          class="best-pr-icon"
-                          src="./images/products_list_section/product_img6.png"
-                          alt="알PDF 이미지"
-                        />
-                        <h3>알PDF</h3>
-                      </div>
-                      <p>
-                        알PDF 뷰어는 PDF를 다양한 포맷으로 변환 할 수 있고, PDF
-                        합치기, PDF 용량 줄이기, 수정 등 PDF를 자유롭게 편집할
-                        수 있는 PDF 변환/편집 프로그램입니다.
-                      </p>
-                      <span>자세히보기</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      class="best-pr-bg"
-                      src="./images/best_product_section/best_pr_bg7.png"
-                      alt=""
-                    />
-                    <div class="best-pr-desc">
-                      <div>
-                        <img
-                          class="best-pr-icon"
-                          src="./images/products_list_section/product_img7.png"
-                          alt="알송 이미지"
-                        />
-                        <h3>알송</h3>
-                      </div>
-                      <p>
-                        음악과 가사를 동시에 즐길 수 있는 알송은 실시간
-                        싱크가사, 어학기능을 제공하는 음악 플레이어입니다.
-                      </p>
-                      <span>자세히보기</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      class="best-pr-bg"
-                      src="./images/best_product_section/best_pr_bg8.png"
-                      alt=""
-                    />
-                    <div class="best-pr-desc">
-                      <div>
-                        <img
-                          class="best-pr-icon"
-                          src="./images/products_list_section/product_img8.png"
-                          alt="알드라이브 이미지"
-                        />
-                        <h3>알드라이브</h3>
-                      </div>
-                      <p>
-                        클라이언트와 서버 간의 파일 송수신 기능 외에, WebDAV 등
-                        다양한 프로토콜 파일 전송을 지원합니다.
-                      </p>
-                      <span>자세히보기</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="banner-section">
+        <!-- ##### Section : Application ##### -->
+        <section class="application common">
           <div class="inner">
-            <ul class="banner-slide">
-              <li>
+            <div class="image-container">
+              <img src="./images/section_app/section_app_img.jpg" alt="" />
+            </div>
+            <div class="content-container">
+              <h2>모든 기기에 Firefox 설치</h2>
+              <p>
+                어디서나 개인 정보를 보호할 수 있습니다. iOS 및 Android용
+                Firefox 브라우저에는 여러분이 어디에 있든 온라인 상에서 사용자를
+                추적하지 못하도록 차단하는 강력한 개인 정보 보호 설정이
+                있습니다.
+              </p>
+              <div class="app-link">
                 <a href="#">
-                  <img
-                    src="./images/banner_section/banner_slide_img1.png"
-                    alt=""
-                  />
+                  <img src="./images/section_app/play_store.png" alt="" />
                 </a>
-              </li>
-              <li>
                 <a href="#">
-                  <img
-                    src="./images/banner_section/banner_slide_img2.png"
-                    alt=""
-                  />
+                  <img src="./images/section_app/app_store.svg" alt="" />
                 </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="user-tips-section">
-          <div class="inner">
-            <h2>더욱 다양하고 쾌적하게 활용하는 꿀팁</h2>
-            <div class="tips">
-              <a class="tip-2col" href="#">
-                <div class="tip-box tip-box1">
-                  <img
-                    src="./images/user_tips_section/user_tips_bg1.png"
-                    alt=""
-                  />
-                  <div class="tip-text">
-                    <h3 class="first-h3">광고 없이,<br />제휴 설치 없이.</h3>
-                    <p>
-                      쾌적한 PC환경을 제공하는<br />
-                      광고 없는 알툴즈 AD-ZERO
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="tip-box tip-box2">
-                  <img
-                    src="./images/user_tips_section/user_tips_bg2.png"
-                    alt=""
-                  />
-                  <div class="tip-text">
-                    <h3>알PDF, 인쇄도 더 다양하게</h3>
-                    <p>알PDF로 문서 인쇄하는 방법</p>
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="tip-box tip-box3">
-                  <img
-                    src="./images/user_tips_section/user_tips_bg3.png"
-                    alt=""
-                  />
-                  <div class="tip-text">
-                    <h3>알캡처, 이미지 배경을 투명하게</h3>
-                    <p>
-                      캡처한 이미지에서 원하는 영역만<br />
-                      골라서 저장할 수 있어요.
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="tip-box tip-box4">
-                  <img
-                    src="./images/user_tips_section/user_tips_bg4.png"
-                    alt=""
-                  />
-                  <div class="tip-text">
-                    <h3>알집, 압축파일 이름이 깨질 때</h3>
-                    <p>
-                      알집 모바일 유니코드 설정으로<br />깨짐없이 압축 해제하는
-                      방법
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="tip-box tip-box5">
-                  <img
-                    src="./images/user_tips_section/user_tips_bg5.png"
-                    alt=""
-                  />
-                  <div class="tip-text">
-                    <h3>알씨, 급할 때는 집에서!</h3>
-                    <p>알씨를 활용하여<br />셀프로 증명사진 만들기</p>
-                  </div>
-                </div>
-              </a>
+              </div>
             </div>
           </div>
         </section>
-        <section class="more-links-section">
-          <div class="more-links">
-            <a href="#">
-              <img
-                src="./images/more_links_section/more_links_icon1.png"
-                alt=""
-              />
-              <div>
-                <span>더 많은 알툴즈 꿀팁은</span>
-                <p>알툴즈 블로그 바로가기</p>
+        <!-- ##### Section : Function ##### -->
+        <section class="function">
+          <div class="inner">
+            <h2>Firefox로 모든 기능 수행 가능</h2>
+            <div class="function-list">
+              <div class="row row1">
+                <ul>
+                  <li>
+                    <img
+                      src="./images/section_function/function_icons_01.png"
+                      alt=""
+                    />
+                    <h3>더 빠르고 똑똑한 검색</h3>
+                    <span>주소 표시 줄에서 검색</span>
+                    <span>검색 엔진 선택</span>
+                    <span>똑똑한 추천 검색어 기능</span>
+                    <span>북마크,방문 기록 및 탭 정보 검색 결과 표시</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/section_function/function_icons_02.png"
+                      alt=""
+                    />
+                    <h3>생산성 향상</h3>
+                    <span>Google 제품과 호환</span>
+                    <span>내장 스크린 샷 도구</span>
+                    <span>북마크 관리자</span>
+                    <span>URL 자동 완성</span>
+                    <span>기기간 동기화</span>
+                    <span>읽기 모드</span>
+                    <span>맞춤법 검사</span>
+                    <span>탭 고정</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/section_function/function_icons_03.png"
+                      alt=""
+                    />
+                    <h3>스트리밍, 공유 및 재생</h3>
+                    <span>동영상 및 소리 자동 재생 차단</span>
+                    <span>화면 속 화면</span>
+                    <span>새 탭 내 선별된 콘텐츠</span>
+                    <span>링크 공유</span>
+                  </li>
+                </ul>
               </div>
-            </a>
-            <a href="#">
-              <img
-                src="./images/more_links_section/more_links_icon2.png"
-                alt=""
-              />
-              <div>
-                <span>가장 빠른 인공지능 소식은</span>
-                <p>이스트소프트 바로가기</p>
+              <div class="row row2">
+                <ul>
+                  <li>
+                    <img
+                      src="./images/section_function/function_icons_04.png"
+                      alt=""
+                    />
+                    <h3>개인 정보 보호</h3>
+                    <span>제 3자 쿠키 차단</span>
+                    <a href="#" class="blue-color-text">디지털 지문 차단</a>
+                    <span>암호화폐 채굴기 차단</span>
+                    <span>사생활 보호 모드</span>
+                    <span>개인 정보 보호 보고서</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/section_function/function_icons_05.png"
+                      alt=""
+                    />
+                    <h3>개인 정보 보호</h3>
+                    <span>정보 유출 웹 사이트 알림</span>
+                    <span>내장 비밀번호 관리자</span>
+                    <span>방문 기록 삭제</span>
+                    <span>입력 양식 자동 채우기</span>
+                    <span>자동 업데이트</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/section_function/function_icons_06.png"
+                      alt=""
+                    />
+                    <h3>맞춤 브라우저 설정</h3>
+                    <span>테마</span>
+                    <span>어두운 모드</span>
+                    <span>확장 기능 모음</span>
+                    <span>검색 표시줄 설정 조정</span>
+                    <span>새 탭 레이아웃 변경</span>
+                  </li>
+                </ul>
               </div>
-            </a>
-            <a href="#">
-              <img
-                src="./images/more_links_section/more_links_icon3.png"
-                alt=""
-              />
+            </div>
+            <div class="function-links">
+              <a class="download-btn" href="#">Firefox 다운로드</a>
+              <a href="#">Firefox 개인정보 보호정책</a>
+            </div>
+          </div>
+        </section>
+        <!-- ##### Section : Custom-Browser -->
+        <section class="custom-browser">
+          <div class="inner">
+            <h2>나만의 Firefox 만들기</h2>
+            <img src="./images/section_custom/section_custom_img.png" alt="" />
+            <div class="how-custom">
               <div>
-                <span>최신 보안 소식은</span>
-                <p>이스트시큐리티 바로가기</p>
+                <h3>다양한 확장 기능 제공</h3>
+                <p>
+                  뉴스, 게임에서 보안에 이르기까지 모든 사용자를 위한 확장
+                  프로그램 이 있습니다. 여러분만의 원하는 기능을 추가해 보세요.
+                </p>
               </div>
-            </a>
+              <div>
+                <h3>기분에 따라 외양 변경</h3>
+                <p>
+                  기분이나 선호도에 따라 밝은 모드에서 어두운 모드로 전환하거나
+                  사용자 맞춤형 지정 테마로 즐겁게 인터넷을 여행하세요.
+                </p>
+              </div>
+              <div>
+                <h3>나만의 설정 조정</h3>
+                <p>
+                  그대로 사용할 필요가 없습니다. 새 탭 페이지, 검색 창, 북마크
+                  등을 여러분이 원하는 방식으로 변경하여 인터넷을 여행하세요.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ##### Section : FireFox-Goals -->
+        <section class="firefox-goals">
+          <div class="inner">
+            <h2>사람을 최우선으로 생각하는 비영리 조직</h2>
+            <div class="goals">
+              <div>
+                <img
+                  src="./images/section_goals/section_goals_img01.jpg"
+                  alt=""
+                />
+                <h3>1998년 이후 같은 목표 지향</h3>
+                <p>
+                  Firefox는 Mozilla 에 의해 과거 가장 많이 사용하던 Internet
+                  Explorer와 오늘날 Chrome 같은 상업용 브라우저에 대한 대안으로
+                  만들어졌습니다. 우리는 사용자 중심의 사명과 자원 봉사
+                  커뮤니티를 기반으로 개인 정보 보호를 다른 무엇보다 우선하고
+                  있습니다.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="./images/section_goals/section_goals_img02.jpg"
+                  alt=""
+                />
+                <h3>최우선 순위는 개인 정보 보호</h3>
+                <p>
+                  인터넷이 변화하고 성장함에 따라 Firefox는 계속해서 개인 정보
+                  보호 권리에 초점을 맞추고 있습니다. 이를 개인 데이터 보호 약속
+                  이라고 합니다. Firefox는 투명하게 데이터 수집을 최소화 하면서
+                  개인 정보를 보호하고 있습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ##### Section : New-Function -->
+        <section class="new-function">
+          <div class="inner">
+            <h2>기본 기능은 그대로 — 새로운 기능을 제공합니다.</h2>
+            <div class="new-function-list">
+              <div class="row row1">
+                <ul>
+                  <li>
+                    <img
+                      src="./images/section_new_function/section_new_function_img01.png"
+                      alt=""
+                    />
+                    <h3>Google 제품과 호환</h3>
+                    <p>
+                      여러분이 많이 사용하는 Google 도구 (예 : Gmail 및 Docs)
+                      역시 Firefox Browser에서 원활하게 동작합니다.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/section_new_function/section_new_function_img02.png"
+                      alt=""
+                    />
+                    <h3>Facebook Container</h3>
+                    <p>
+                      Facebook (및 Instagram)이 웹에서 사용자를 추적하지
+                      못하도록 하는 확장 기능을 사용하세요.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/section_new_function/section_new_function_img03.png"
+                      alt=""
+                    />
+                    <h3>디바이스간 동기화</h3>
+                    <p>
+                      Firefox는 모든 기기에서 사용할 수 있습니다. 탭, 방문 기록,
+                      북마크를 가지고 다니세요. Mozilla 계정만 있으면 동기화와
+                      더 많은 Mozilla 제품에 접근할 수 있습니다.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="row row2">
+                <ul>
+                  <li>
+                    <img
+                      src="./images/section_new_function/section_new_function_img04.png"
+                      alt=""
+                    />
+                    <h3>스크린샷</h3>
+                    <p>
+                      브라우저에 내장 된 스크린 샷 도구를 사용하여 웹 페이지를
+                      고해상도 이미지로 캡처하세요.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/section_new_function/section_new_function_img05.png"
+                      alt=""
+                    />
+                    <h3>향상된 추적 방지 기능</h3>
+                    <p>
+                      Firefox는 자동으로 많은 제 3자 추적 프로그램을 차단 하여
+                      여러분의 웹 활동을 수집하거나 판매하지 못하도록 합니다.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/section_new_function/section_new_function_img06.png"
+                      alt=""
+                    />
+                    <h3>화면 속 화면</h3>
+                    <p>
+                      업무를 하면서도 강연을 보거나, 좋아하는 스포츠 경기
+                      동영상을 함께 볼 수 있습니다.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="function-links">
+              <a class="download-btn" href="#">Firefox 다운로드</a>
+              <a href="#">Firefox 개인정보 보호정책</a>
+            </div>
           </div>
         </section>
       </main>
       <!-- ########## Footer ########## -->
       <footer>
+        <div class="manual">
+          <p>
+            질문이 있으십니까?
+            <a class="blue-color-text" href="#">Mozilla 도움말</a> 을
+            참고하세요.
+          </p>
+        </div>
         <div class="footer-top">
-          <div class="footer-inner">
-            <ul class="footer-top-links">
-              <li class="f-links-download">
-                <a class="f-links-title" href="#">알툴즈 다운로드</a>
-                <div>
-                  <div class="f-links-col">
-                    <a href="#">알집</a>
-                    <a href="#">알씨</a>
-                    <a href="#">알캡처</a>
-                    <a href="#">알PDF</a>
-                    <a href="#">알툴즈 모바일</a>
+          <div class="inner">
+            <a class="footer-logo" href="#">
+              <img src="./images/footer/footer_mozilla_logo.svg" alt=""
+            /></a>
+            <div class="footer-links">
+              <ul>
+                <li>
+                  <h3 class="link-item-title">회사</h3>
+                  <div class="link-item">
+                    <a href="#">Mozilla 선언문</a>
+                    <a href="#">보도자료</a>
+                    <a href="#">Mozilla 블로그</a>
+                    <a href="#">채용 정보</a>
+                    <a href="#">연락처</a>
+                    <a class="donation" href="#"
+                      ><i class="fa fa-heart" aria-hidden="true"></i> 기부</a
+                    >
                   </div>
-                  <div class="f-links-col">
-                    <a href="#">알드라이브</a>
-                    <a href="#">알송</a>
-                    <a href="#">알약</a>
-                    <a href="#">앨런 Beta</a>
+                </li>
+                <li>
+                  <h3 class="link-item-title">자료</h3>
+                  <div class="link-item">
+                    <a href="#">프라이버시 허브</a>
+                    <a href="#">Mozilla로 광고하기</a>
+                    <a href="#">브랜드 가이드</a>
                   </div>
-                </div>
-              </li>
-              <li>
-                <a class="f-links-title" href="#">알툴즈 AD-ZERO</a>
-              </li>
-              <li>
-                <a class="f-links-title" href="#">비즈니스 구매</a>
-              </li>
-              <li>
-                <a class="f-links-title" href="#">고객센터</a>
-                <a href="#">자주하는 질문</a>
-                <a href="#">1:1 문의하기</a>
-                <a href="#">공지사항</a>
-              </li>
-              <li>
-                <a class="f-links-title" href="#">마이페이지</a>
-                <a href="#">구독 관리</a>
-                <a href="#">포인트 내역</a>
-                <a href="#">1:1 문의 내역</a>
-                <a href="#">보유 혜택 내역</a>
-                <a href="#">계정 설정</a>
-              </li>
-            </ul>
+                </li>
+                <li>
+                  <h3 class="link-item-title">도움말</h3>
+                  <div class="link-item">
+                    <a href="#">제품 도움말</a>
+                    <a href="#">버그 신고</a>
+                    <a href="#">Mozilla 지역화</a>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="link-item-title">개발자</h3>
+                  <div class="link-item">
+                    <a href="#">Developer Edition</a>
+                    <a href="#">Beta</a>
+                    <a href="#">Android 용 Beta</a>
+                    <a href="#">Nightly</a>
+                    <a href="#">Android 용 Nightly</a>
+                    <a href="#">기업용</a>
+                    <a href="#">도구</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="mozilla-sns">
+                    <span>@Mozilla 팔로우</span>
+                    <a class="sns-icon" href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="sns-icon" href="#"
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                    <a class="sns-icon" href="#"
+                      ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                    ></a>
+                    <a class="sns-icon" href="#"
+                      ><i class="fa fa-spotify" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="firefox-sns">
+                    <span>@Firefox 팔로우</span>
+                    <a class="sns-icon" href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="sns-icon" href="#"
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                    <a class="sns-icon" href="#"
+                      ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="footer-inner">
-            <div class="footer-bot-t">
-              <div class="footer-bot-links">
-                <a href="#">회사소개</a>
-                <a href="#">이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">소프트웨어 사용권 계약서</a>
-                <a href="#">제휴문의</a>
-                <a href="#">이벤트</a>
-              </div>
-              <div class="family-site">
-                <button class="fam-site-open">family site</button>
-                <div class="fam-list">
-                  <a href="#">이스트소프트</a>
-                  <a href="#">이스트시큐리티</a>
-                  <a href="#">이스트게임즈</a>
-                  <a href="#">이스트에이드</a>
-                  <a href="#">ROUNZ</a>
-                  <a href="#">Exponential</a>
-                </div>
-              </div>
+          <div class="inner">
+            <div class="site-info">
+              <a href="#">웹 사이트 개인정보 보호 정책</a>
+              <a href="#">쿠키</a>
+              <a href="#">법적 고지</a>
+              <a href="#">커뮤니티 참여 가이드라인</a>
+              <a href="#">이 사이트 정보</a>
+              <p>
+                <a href="#">Mozilla Corporation</a>를 운영하는 비영리 재단인
+                <a href="#">Mozilla Foundation</a>을 방문하세요.
+              </p>
+              <p>
+                ©1998–2024. 콘텐츠의 일부는 개벌 mozilla.org 공헌자에게 저작권이
+                있습니다. 콘텐츠는 <a href="#">Creative Commons 라이센스</a>에
+                의해 사용할 수 있습니다.
+              </p>
             </div>
-            <div class="footer-bot-b">
-              <div class="company-link">
-                <a class="company-logo" href="#"></a>
-              </div>
-              <div class="company-info">
-                <p>
-                  (주)이스트소프트 서울시 서초구 반포대로 3 이스트빌딩 (우)06711
-                </p>
-                <span>대표이사 : 정상원</span>
-                <span>사업자등록번호 : 229-81-03214</span>
-                <span>통신판매업신고번호 : 2011-서울서초-1962</span>
-                <span>TEL. 1544-8209 </span>
-                <span>FAX. 02-882-1155</span>
-                <span
-                  >E-mail.
-                  <a href="mailto:hyo4754@gmail.com"
-                    >altools@estsoft.com</a
-                  ></span
-                >
-              </div>
+            <div class="language">
+              <a href="#">언어</a>
+              <select name="" id="">
+                <option value="ko">한국어</option>
+                <option value="en">English</option>
+                <option value="jp">日本語</option>
+                <option value="zh">中文</option>
+                <option value="fr">Français</option>
+              </select>
             </div>
           </div>
         </div>

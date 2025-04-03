@@ -154,9 +154,6 @@ $(function ($) {
       });
     },
     portfolio() {
-      $.featherlight.defaults.iframeAllowFullscreen = true;
-      $.featherlight.defaults.iframeAllow = "fullscreen; autoplay";
-
       // Website Portfolio Horizontal Scroll
       const $websitePortfolio = $(".website-portfolio");
       const $website = gsap.utils.toArray(".website");

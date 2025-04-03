@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MONAMI</title>
-    <link rel="icon" href="./images/monami_favi.png" />
+    <title>국민건강보험</title>
+    <link rel="icon" href="./images/favicon.png" />
     <!-- Custom.css -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- XEICON -->
+    <link rel="stylesheet" href="./assets/xeicon/css/xeicon.min.css" />
     <!-- jQuery CDN -->
     <script src="./script/jquery-1.12.4.js" defer></script>
     <!-- Custom.js -->
@@ -16,1012 +18,880 @@
     <div id="wrap">
       <!-- ########## Header ########## -->
       <header>
-        <div class="header-top">
+        <div class="header-announcement">
+          <p class="announcement-text">
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
+          </p>
+        </div>
+        <div class="header-main">
           <div class="inner">
-            <div class="language-selector">
-              <div class="current-lang"><a href="#">KOR</a></div>
-              <ul class="language-list">
-                <li><a href="#">ENG</a></li>
-              </ul>
+            <div class="logo-img">
+              <a href="#">
+                <img
+                  src="./images/header/header_logo.png"
+                  alt="헤더 중앙 로고 이미지"
+                />
+              </a>
             </div>
-            <div class="sns-links">
-              <a href="#"
-                ><img
-                  src="./images/header/icon_facebook.gif"
-                  alt="모나미 페이스북 링크"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./images/header/icon_insta.gif"
-                  alt="모나미 인스타그램 링크"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./images/header/icon_youtube.png"
-                  alt="모나미 유튜브 링크"
-              /></a>
-            </div>
-            <div class="top-menu">
-              <a href="#">HOME</a>
-              <a href="#">SITEMAP</a>
-              <a href="#">CONTACT US</a>
+            <div>
+              <div class="setting-box">
+                <a href="#">인증서 안내</a>
+                <span>소리</span>
+                <span>화면 크기</span>
+                <span>Language</span>
+              </div>
+              <div class="user-action">
+                <span class="search-box-open">통합검색</span>
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="header-bot">
-          <div class="inner">
-            <a href="#"
-              ><img
-                src="./images/header/header-logo.jpg"
-                alt="모나미 로고 이미지"
-            /></a>
-            <nav>
-              <ul class="gnb">
-                <li>
-                  <a href="#">모나미소개</a>
-                  <div class="dropdown">
-                    <a href="#">CEO 메시지</a>
-                    <a href="#">회사정보</a>
-                    <a href="#">회사연혁</a>
-                    <a href="#">윤리강령</a>
-                    <a href="#">투자정보</a>
-                    <a href="#">CI</a>
-                    <a href="#">찾아오시는 길</a>
-                    <a href="#" class="last-li">안전보건경영방침</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">모나미제품</a>
-                  <div class="dropdown">
-                    <a href="#">프리미엄 펜</a>
-                    <a href="#">펜ㆍ펜슬</a>
-                    <a href="#">마카ㆍ컬러링</a>
-                    <a href="#">노트ㆍ사무용품</a>
-                    <a href="#">잉크ㆍ리필</a>
-                    <a href="#" class="last-li">카탈로그</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">NEWS&VIDEO</a>
-                  <div class="dropdown">
-                    <a href="#">보도자료</a>
-                    <a href="#" class="last-li">동영상자료</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">모나미 미술대회</a>
-                  <div class="dropdown">
-                    <a href="#">미술대회 소개</a>
-                    <a href="#" class="last-li">수상작 발표</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">고객지원</a>
-                  <div class="dropdown">
-                    <a href="#">자주묻는질문</a>
-                    <a href="#" class="last-li">문의하기</a>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">기업 구매/개발</a>
-                  <div class="dropdown">
-                    <a href="#">대량 구매 문의</a>
-                    <a href="#">기업 및 단체 구매</a>
-                    <a href="#" class="last-li">산업용 맞춤 제품 개발</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-            <div class="action-icons">
-              <i class="fa fa-search" aria-hidden="true"></i>
-              <div class="hamburger">
+        <div class="dropdown-container">
+          <div class="header-nav-container">
+            <div class="inner">
+              <nav class="header-nav">
+                <ul>
+                  <li>
+                    <a href="#">민원여기요</a>
+                  </li>
+                  <li>
+                    <a href="#">건강iN</a>
+                  </li>
+                  <li>
+                    <a href="#">정책센터</a>
+                  </li>
+                  <li>
+                    <a href="#">국민과함께</a>
+                  </li>
+                  <li>
+                    <a href="#">공단요모조모</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="hamburger-box">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
             </div>
           </div>
-        </div>
-        <div class="sitemap">
-          <ul>
-            <li>
-              <b>모나미소개</b>
-              <a href="#">CEO 메시지</a>
-              <a href="#">회사정보</a>
-              <a href="#">회사연혁</a>
-              <a href="#">윤리강령</a>
-              <a href="#">투자정보</a>
-              <a href="#">CI</a>
-              <a href="#">찾아오시는 길</a>
-              <a href="#">안전보건경영방침</a>
-            </li>
-            <li>
-              <b>모나미제품</b>
-              <a href="#">프리미엄 펜</a>
-              <a href="#">펜ㆍ펜슬</a>
-              <a href="#">마카ㆍ컬러링</a>
-              <a href="#">노트ㆍ사무용품</a>
-              <a href="#">잉크ㆍ리필</a>
-              <a href="#">카탈로그</a>
-            </li>
-            <li>
-              <b>NEWS&VIDEO</b>
-              <a href="#">보도자료</a>
-              <a href="#">동영상자료</a>
-            </li>
-            <li>
-              <b>모나미 미술대회</b>
-              <a href="#">자주묻는질문</a>
-              <a href="#">문의하기</a>
-            </li>
-            <li>
-              <b>고객지원</b>
-              <a href="#">자주묻는질문</a>
-              <a href="#">문의하기</a>
-            </li>
-            <li>
-              <b>기업 구매/개발</b>
-              <a href="#">대량 구매 문의</a>
-              <a href="#">기업 및 단체 구매</a>
-              <a href="#">산업용 맞춤 제품 개발</a>
-            </li>
-          </ul>
+          <div class="dropdown">
+            <div class="inner">
+              <ul>
+                <li>
+                  <a href="#">개인민원</a>
+                  <a href="#">사업장민원</a>
+                  <a href="#">민원안내</a>
+                  <a href="#">상담문의</a>
+                  <a href="#">재정지킴이 제안/신고센터</a>
+                  <a href="#">비위행위 신고센터</a>
+                </li>
+                <li>
+                  <a href="#">나의건강관리</a>
+                  <a href="#">가족건강관리</a>
+                  <a href="#">건강프로그램</a>
+                  <a href="#">건강생활</a>
+                  <a href="#">건강자료실</a>
+                  <a href="#">검진기관/병원찾기</a>
+                </li>
+                <li>
+                  <a href="#">국민건강보험</a>
+                  <a href="#">노인장기요양보험</a>
+                  <a href="#">정책안네</a>
+                  <a href="#">권리구제제도</a>
+                  <a href="#">법령정보 건강Law</a>
+                </li>
+                <li>
+                  <a href="#">정보공개</a>
+                  <a href="#">경영공시</a>
+                  <a href="#">국민참여</a>
+                  <a href="#">뉴스/소식</a>
+                </li>
+                <li>
+                  <a href="#">공단소개</a>
+                  <a href="#">조직 및 인원</a>
+                  <a href="#">홍보센터</a>
+                  <a href="#">경영철학</a>
+                  <a href="#">사회공헌</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
       <!-- ########## Main ########## -->
       <main>
-        <!-- ##### Section : Hero ##### -->
-        <section class="hero-section">
-          <img
-            src="./images/main/hero_section/hero_background.jpg"
-            alt="모나미 대표 배경 이미지"
-          />
-          <div class="heading">
-            <h1>
-              어쩌면 삶은<br />인생이라는 종이 위에<br />써 내려가는<br />펜의
-              기록 같습니다.
-            </h1>
+        <!-- ##### Section1 : Main Section ##### -->
+        <section class="main-section">
+          <div class="inner">
             <p>
-              그중에서도 지우고 싶지 않은 기록이 있습니다.<br />모나미는 언제나
-              당신의 행복한 기록과 함께 합니다.
+              <img
+                src="./images/main/section1/section1_text_img.png"
+                alt="국민건강보험은 소통과 배려로 국민과 함께 하겠습니다. 텍스트 이미지"
+              />
             </p>
+            <h2>자주 찾는 서비스</h2>
+            <div class="service-tab-button">
+              <span data-alt="individual-tab" class="individual-btn active"
+                >개인</span
+              >
+              <span data-alt="business-tab" class="business-btn">사업장</span>
+            </div>
+            <div class="service-tab individual-tab active">
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img1.png"
+                  alt=""
+                />
+                <span>소득 조정ㆍ정산 신청 및 결과 조회</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img2.png"
+                  alt=""
+                />
+                <span>자격득실<br />확인서 발급</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img3.png"
+                  alt=""
+                />
+                <span>보험료<br />납부확인서</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img4.png"
+                  alt=""
+                />
+                <span>환급금<br />조회/신청</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img5.png"
+                  alt=""
+                />
+                <span>보험료<br />조회/납부</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img6.png"
+                  alt=""
+                />
+                <span>보험료<br />계산기</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img7.png"
+                  alt=""
+                />
+                <span>건강검진<br />대상조회</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img8.png"
+                  alt=""
+                />
+                <span>영유아<br />검진결과조회</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_individual/individual_tab_img9.png"
+                  alt=""
+                />
+                <span>서식<br />자료실</span>
+              </a>
+              <a class="more" href="#">더보기</a>
+            </div>
+            <div class="service-tab business-tab">
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img1.png"
+                  alt=""
+                />
+                <span>사업장<br />직원조회</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img2.png"
+                  alt=""
+                />
+                <span>사업장적용<br />통보서</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img3.png"
+                  alt=""
+                />
+                <span>보험료<br />고지내역조회</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img4.png"
+                  alt=""
+                />
+                <span>보험료<br />고지납부현황</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img5.png"
+                  alt=""
+                />
+                <span>4대보험<br />완납증명서</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img6.png"
+                  alt=""
+                />
+                <span>건강보험<br />납부확인서</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img7.png"
+                  alt=""
+                />
+                <span>연금<br />납부확인서</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img8.png"
+                  alt=""
+                />
+                <span>증명서발급<br />사실 확인</span>
+              </a>
+              <a class="service-link" href="#">
+                <img
+                  src="./images/main/section1/tab_business/business_tab_img9.png"
+                  alt=""
+                />
+                <span>보험료<br />산출내역신청</span>
+              </a>
+              <a class="more" href="#">더보기</a>
+            </div>
           </div>
         </section>
-        <!-- ##### Section : New Arrivals ##### -->
-        <section class="new-arrivals">
+        <!-- ##### Section2 : News ##### -->
+        <section class="news">
+          <div class="news-container">
+            <div class="post-container">
+              <h2>뉴스/소식</h2>
+              <div class="news-tab-button">
+                <div>
+                  <span data-alt="notice" class="active">공지사항</span>
+                  <span data-alt="release">보도자료</span>
+                  <span data-alt="itb">입찰공고</span>
+                  <span data-alt="recruitment">채용</span>
+                </div>
+                <a href="#">더보기</a>
+              </div>
+              <div class="news-tab notice active">
+                <ul>
+                  <li>
+                    <a href="#"
+                      >'24년 전국민 마음투자 지원사업 이용자 만족도 조사 용역
+                      개인정보 처리업무 재위탁 내용 공지</a
+                    >
+                    <span>2024.10.11</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >개인정보 목적 외 이용 및 제공
+                      내역(2024.9.15.~2024.9.30.)</a
+                    >
+                    <span>2024.10.10</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >공단 노후 장비 교체 작업 안내(10.11. 19:30 ~ 10.12.
+                      07:00)</a
+                    >
+                    <span>2024.10.08</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >공공 마이데이터 제공서비스 일시 중단 안내(10.12.
+                      09:00~24:00)</a
+                    >
+                    <span>2024.10.08</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >「일차의료 만성질환관리 시범사업 안내 지침」일부개정
+                      안내('24.9.30.)</a
+                    >
+                    <span>2024.10.04</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="news-tab release">
+                <ul>
+                  <li>
+                    <a href="#"
+                      >국민건강보험공단 특사경 도입 촉구안,
+                      시도의회의장협의회에서 만장일치로 통과</a
+                    >
+                    <span>2024.10.02</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >건강보험공단, 원주시 아동의 건강한 성장을 위한 지역사회
+                      돌봄 지원 나서</a
+                    >
+                    <span>2024.10.02</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >요양보호사 처우개선을 위한 ‘요양보호사 승급제’ 10월 첫
+                      시행</a
+                    >
+                    <span>2024.09.30</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >전국민 마음투자 지원사업 서비스, 온라인으로도
+                      신청하세요</a
+                    >
+                    <span>2024.09.30</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >건강보험공단, 장기요양 재택의료 우수 사례 발표회 개최</a
+                    >
+                    <span>2024.09.25</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="news-tab itb">
+                <ul>
+                  <li>
+                    <a href="#"
+                      >[정보제공요청서(RFI)]디지털 대전환을 위한 통합징수
+                      정보시스템 재구축 사업</a
+                    >
+                    <span>2024.10.11</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >[사전규격공개]2024년 우수？모범직원 국내
+                      문화탐방(긴급)</a
+                    >
+                    <span>2024.10.11</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >[조달청 공고]2024년도 빅데이터기반 진료지원 시스템 인프라
+                      도입 사업(긴급)</a
+                    >
+                    <span>2024.10.11</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >[전자소액수의] 사내방송 전자기록물 저장장치(NAS) 신규
+                      구축</a
+                    >
+                    <span>2024.10.10</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >[제안서평가 회의록] 인재개발원 제2교육동 「교육동 및
+                      숙소동 가구」 제작 설치</a
+                    >
+                    <span>2024.10.09</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="news-tab recruitment">
+                <ul>
+                  <li>
+                    <a href="#"
+                      >2024년 하반기 2차 국민건강보험공단 개방형직위 및 전문인력
+                      채용 서류심사 결과발표</a
+                    >
+                    <span>2024.10.02</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >2024년 하반기 2차 국민건강보험공단 개방형직위 및 전문인력
+                      채용 공고</a
+                    >
+                    <span>2024.09.09</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >2024년도 하반기 신규직원 채용 입사지원서 접수 안내</a
+                    >
+                    <span>2024.08.19</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >2024년도 하반기 국민건강보험공단 신규직원 채용 공고</a
+                    >
+                    <span>2024.08.14</span>
+                  </li>
+                  <li>
+                    <a href="#">국민건강보험공단 상임감사 초빙 공고</a>
+                    <span>2024.08.12</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="promo-container">
+              <div class="promo-slide">
+                <ul>
+                  <li class="promo promo12">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img12.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo01">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img01.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo02">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img02.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo03">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img03.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo04">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img04.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo05">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img05.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo06">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img06.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo07">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img07.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo08">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img08.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo09">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img09.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo10">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img10.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo11">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img11.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo12">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img12.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="promo promo01">
+                    <a href="#">
+                      <img
+                        src="./images/main/section2/promo/promo_img01.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="promo-slide-btn">
+                <div class="promo-index">
+                  <span class="current-index">1</span> /
+                  <span class="total-index"></span>
+                </div>
+                <span class="promo-prev-slide"></span>
+                <span class="promo-pause-btn"></span>
+                <span class="promo-next-slide"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ##### Section3 : Support ##### -->
+        <section class="support">
           <div class="inner">
-            <div class="new-arrival-top">
-              <div class="left-layout-box">
-                <div class="new-arrival-title">
-                  <h2>NEW<span>ARRIVALS</span></h2>
-                  <p>가장 먼저 만나는 설레는 기다림</p>
-                </div>
-                <div class="new-item new-item-1">
-                  <a href="#"
-                    ><img
-                      src="./images/main/new_arrival/item_img1.jpg"
-                      alt="PEN FX-ZETA C3 이미지"
-                  /></a>
-                  <div class="desc">
-                    <div class="desc-text">
-                      <small>PEN</small>
-                      <span>FX ZETA C3</span>
-                    </div>
-                    <div class="cross-box">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="right-layout-box">
-                <div class="new-item new-item-2">
-                  <a href="#"
-                    ><img
-                      src="./images/main/new_arrival/item_img2.jpg"
-                      alt="NOTE 지퀀스 이미지"
-                  /></a>
-                  <div class="desc">
-                    <div class="desc-text">
-                      <small>NOTE</small>
-                      <span>지퀀스</span>
-                    </div>
-                    <div class="cross-box">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
+            <div class="location-container">
+              <h3>위치 및 조직도</h3>
+              <div class="location-link">
+                <a href="#">조직도</a>
+                <a href="#">지사찾기</a>
+                <a href="#">외국인민원센터</a>
+                <a href="#">검진기관 찾기</a>
+                <a href="#">병(의)원 찾기</a>
               </div>
             </div>
-            <div class="new-arrival-bot">
-              <div class="bot-item-box">
-                <div class="new-item new-item-3">
-                  <a href="#"
-                    ><img
-                      src="./images/main/new_arrival/item_img3.jpg"
-                      alt="PREMIUM PEN 프러스펜3000프라임 이미지"
-                  /></a>
-                  <div class="desc">
-                    <div class="desc-text">
-                      <small>PREMIUM PEN</small>
-                      <span>프러스펜3000프라임</span>
-                    </div>
-                    <div class="cross-box">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="new-item new-item-4">
-                  <a href="#"
-                    ><img
-                      src="./images/main/new_arrival/item_img4.jpg"
-                      alt="FOUNTAIN PEN 153 아이디 만년필 이미지"
-                  /></a>
-                  <div class="desc">
-                    <div class="desc-text">
-                      <small>FOUNTAIN PEN</small>
-                      <span>153 아이디 만년필</span>
-                    </div>
-                    <div class="cross-box">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="new-item new-item-5">
-                  <a href="#"
-                    ><img
-                      src="./images/main/new_arrival/item_img5.jpg"
-                      alt="WATER-BASED MARKER 프러스펜 3000 이미지"
-                  /></a>
-                  <div class="desc">
-                    <div class="desc-text">
-                      <small>WATER-BASED MARKER</small>
-                      <span>프러스펜 3000</span>
-                    </div>
-                    <div class="cross-box">
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
+            <div class="guide-container">
+              <h3>상담 및 안내</h3>
+              <div class="guide-link">
+                <a href="#">상담/문의</a>
+                <a href="#">국민제안</a>
+                <a href="#">칭찬해요/속상해요</a>
+                <a href="#">재정지킴이/제안신고센터</a>
+                <a href="#">자주 묻는 질문</a>
+                <a href="#">고객센터(1577-1000)</a>
               </div>
             </div>
           </div>
         </section>
-        <!-- ##### Section : Best Product ##### -->
-        <section class="best-product">
-          <h2>BEST PRODUCT</h2>
-          <p>언제 어디서나 생활 속에 함께하는 모나미</p>
-          <div class="tab-menu">
-            <span data-tab="best-tab1" class="active">프리미엄 펜</span>
-            <span data-tab="best-tab2">펜ㆍ펜슬</span>
-            <span data-tab="best-tab3">마카ㆍ컬러링</span>
-            <span data-tab="best-tab4">노트ㆍ사무용품</span>
-          </div>
-          <div class="best-tab best-tab1 active">
-            <div class="slide-container">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item01.jpg"
-                      alt=""
-                    />
-                    <small>프리미엄 펜</small>
-                    <span>프러스펜 3000 프라임</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item02.jpg"
-                      alt=""
-                    />
-                    <small>프리미엄 펜</small>
-                    <span>153 리스펙트 리파인</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item03.jpg"
-                      alt=""
-                    />
-                    <small>만년필</small>
-                    <span>153 아이디 만년필</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item04.jpg"
-                      alt=""
-                    />
-                    <small>만년필</small>
-                    <span>153 네오 만년필 EF</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item05.jpg"
-                      alt=""
-                    />
-                    <small>프리미엄 펜</small>
-                    <span>153 블랙 & 화이트</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item06.jpg"
-                      alt=""
-                    />
-                    <small>프리미엄 펜</small>
-                    <span>153 골드</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item07.jpg"
-                      alt=""
-                    />
-                    <small>프리미엄 펜</small>
-                    <span>153 아이디</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item08.jpg"
-                      alt=""
-                    />
-                    <small>프리미엄 펜</small>
-                    <span>60주년 프러스펜 3000 데스크펜 스페셜 에디션</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item09.jpg"
-                      alt=""
-                    />
-                    <small>고급샤프</small>
-                    <span>153 아이디 샤프</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item10.jpg"
-                      alt=""
-                    />
-                    <small>프리미엄 펜</small>
-                    <span>153 네오</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab1/tab1_item11.jpg"
-                      alt=""
-                    />
-                    <small>프리미엄 펜</small>
-                    <span>153 리스펙트</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="best-tab best-tab2">
-            <div class="slide-container">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item01.jpg"
-                      alt="그리픽스 팝 샤프 이미지"
-                    />
-                    <small>샤프/샤프심</small>
-                    <span>그리픽스 팝 샤프</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item02.jpg"
-                      alt="사인펜 슈퍼 파스텔 12색 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>사인펜 슈퍼 파스텔 12색</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item03.jpg"
-                      alt="프러스펜 3000 피그먼트 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>프러스펜 3000 피그먼트</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item04.jpg"
-                      alt="라이브칼라(화이트 축) 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>라이브칼라(화이트 축)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item05.jpg"
-                      alt="FX ZETA C3 이미지"
-                    />
-                    <small>유성볼펜</small>
-                    <span>FX ZETA C3</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item06.jpg"
-                      alt="제니스7 이미지"
-                    />
-                    <small>유성볼펜</small>
-                    <span>제니스7</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item07.jpg"
-                      alt="프러스펜 3000 60색 세트 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>프러스펜 3000 60색 세트</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item08.jpg"
-                      alt="FX 153 이미지"
-                    />
-                    <small>FX 153</small>
-                    <span>FX 153</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item09.jpg"
-                      alt="FX ZETA 이미지"
-                    />
-                    <small>유성볼펜</small>
-                    <span>FX ZETA</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item10.jpg"
-                      alt="에센티 트윈 이미지"
-                    />
-                    <small>형광펜</small>
-                    <span>에센티 트윈</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item11.jpg"
-                      alt="NEW 바우하우스 연필 이미지"
-                    />
-                    <small>연필</small>
-                    <span>NEW 바우하우스 연필</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item12.jpg"
-                      alt="클리키 이미지"
-                    />
-                    <small>샤프/샤프심</small>
-                    <span>클리키</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item13.jpg"
-                      alt="BP 153 이미지"
-                    />
-                    <small>유성볼펜</small>
-                    <span>BP 153</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item14.jpg"
-                      alt="연필_모니주(오렌지/핑크/퍼플) 이미지"
-                    />
-                    <small>연필</small>
-                    <span>연필_모니주(오렌지/핑크/퍼플)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item15.jpg"
-                      alt="연필_모니주(그린/블루) 이미지"
-                    />
-                    <small>연필</small>
-                    <span>연필_모니주(그린/블루)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item16.jpg"
-                      alt="모니주 사인펜(핑크/블루)"
-                    />
-                    <small>사인펜</small>
-                    <span>모니주 사인펜(핑크/블루)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item17.jpg"
-                      alt="라이브 칼라 DIY 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>라이브 칼라 DIY</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item18.jpg"
-                      alt="프러스펜 S / 리필심 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>프러스펜 S / 리필심</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab2/tab2_item19.jpg"
-                      alt="프러스펜 3000 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>프러스펜 3000</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="best-tab best-tab3">
-            <div class="slide-container">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item01.jpg"
-                      alt="워터 리얼 브러쉬 이미지"
-                    />
-                    <small>워터브러쉬</small>
-                    <span>워터 리얼 브러쉬</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item02.jpg"
-                      alt="컬러 리얼 브러쉬 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>컬러 리얼 브러쉬</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item03.jpg"
-                      alt="붓펜 12색 세트 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>붓펜 12색 세트</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item04.jpg"
-                      alt="컬러 트윈 브러쉬 이미지"
-                    />
-                    <small>수성펜</small>
-                    <span>컬러 트윈 브러쉬</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item05.jpg"
-                      alt="크레파스_모니주(옐로우) 이미지"
-                    />
-                    <small>크레파스</small>
-                    <span>크레파스_모니주(옐로우)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item06.jpg"
-                      alt="크레파스_모니주(핑크) 이미지"
-                    />
-                    <small>크레파스</small>
-                    <span>크레파스_모니주(핑크)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item07.jpg"
-                      alt="크레파스_모니주(블루) 이미지"
-                    />
-                    <small>크레파스</small>
-                    <span>크레파스_모니주(블루)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item08.jpg"
-                      alt="종이말이 색연필 모니주(블루/핑크) 이미지"
-                    />
-                    <small>색연필</small>
-                    <span>종이말이 색연필 모니주(블루/핑크)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item09.jpg"
-                      alt="샤프식 색연필 모니주(블루/핑크) 이미지"
-                    />
-                    <small>샤프식 색연필</small>
-                    <span>샤프식 색연필 모니주(블루/핑크)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item10.jpg"
-                      alt="그림물감_모니주(핑크) 이미지"
-                    />
-                    <small>그림물감</small>
-                    <span>그림물감_모니주(핑크)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item11.jpg"
-                      alt="그림물감_모니주(블루) 이미지"
-                    />
-                    <small>그림물감</small>
-                    <span>그림물감_모니주(블루)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item12.jpg"
-                      alt="세라믹마카 480 / 482 이미지"
-                    />
-                    <small>생활마카</small>
-                    <span>세라믹마카 480 / 482</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item13.jpg"
-                      alt="패브릭마카 470 이미지"
-                    />
-                    <small>생활마카</small>
-                    <span>패브릭마카 470</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item14.jpg"
-                      alt="데코마카 463 이미지"
-                    />
-                    <small>생활마카</small>
-                    <span>데코마카 463</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item15.jpg"
-                      alt="데코마카 460 이미지"
-                    />
-                    <small>생활마카</small>
-                    <span>데코마카 460</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item16.jpg"
-                      alt="붓펜 이미지"
-                    />
-                    <small>수성마카</small>
-                    <span>붓펜</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item17.jpg"
-                      alt="키친마카 420 이미지"
-                    />
-                    <small>생활마카</small>
-                    <span>키친마카 420</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item18.jpg"
-                      alt="프로 페인트마카 이미지"
-                    />
-                    <small>산업마카</small>
-                    <span>프로 페인트마카</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item19.jpg"
-                      alt="시그마플로 생잉크 보드마카 220 / 221 이미지"
-                    />
-                    <small>보드마카</small>
-                    <span>시그마플로 생잉크 보드마카 220 / 221</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab3/tab3_item20.jpg"
-                      alt="가든마카 450 이미지"
-                    />
-                    <small>생활마카</small>
-                    <span>가든마카 450</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="best-tab best-tab4">
-            <div class="slide-container">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab4/tab4_item1.jpg"
-                      alt="지퀀스 노트 The Color A5 이미지"
-                    />
-                    <small>노트</small>
-                    <span>지퀀스 노트 The Color A5</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab4/tab4_item2.jpg"
-                      alt="다목적으로 사용 가능한 목공풀 이미지"
-                    />
-                    <small>풀</small>
-                    <span>다목적으로 사용 가능한 목공풀</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab4/tab4_item3.jpg"
-                      alt="다목적으로 사용 가능한 목공풀 2-Way 이미지"
-                    />
-                    <small>풀</small>
-                    <span>다목적으로 사용 가능한 목공풀 2-Way</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab4/tab4_item4.jpg"
-                      alt="빨리 마르는 물풀 이미지"
-                    />
-                    <small>풀</small>
-                    <span>빨리 마르는 물풀</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab4/tab4_item5.jpg"
-                      alt="붙였다 뗄 수 있는 메모 풀 이미지"
-                    />
-                    <small>풀</small>
-                    <span>붙였다 뗄 수 있는 메모 풀</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab4/tab4_item6.jpg"
-                      alt="모서리에 바르기 쉬운 삼각풀 이미지"
-                    />
-                    <small>풀</small>
-                    <span>모서리에 바르기 쉬운 삼각풀</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./images/main/best_product/best_tab4/tab4_item7.jpg"
-                      alt="한 번에 잘 발리는 부드러운 풀 이미지"
-                    />
-                    <small>풀</small>
-                    <span>한 번에 잘 발리는 부드러운 풀</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- ##### Section : Intro Video ##### -->
-        <section class="intro-video">
-          <video
-            src="./videos/monami_intro_video.mp4"
-            muted
-            autoplay
-            loop
-            poster="./images/main/video_section/video_thumbnail.png"
-          ></video>
-        </section>
-        <!-- ##### Section : Community ##### -->
-        <section class="community">
+        <!-- ##### Section4 : Nhis intro ##### -->
+        <section class="nhis-intro">
           <div class="inner">
-            <div class="news">
-              <div class="heading">
-                <h3>MONAMI NEWS</h3>
-                <a href="#">MORE</a>
+            <h3>공단소개</h3>
+            <div class="president">
+              <img
+                src="./images/main/section4/president/president_img.jpg"
+                alt=""
+              />
+              <div class="president-intro">
+                <h4>국민건강보험공단 이사장 정기석입니다.</h4>
+                <p>
+                  국민건강보험공단 홈페이지를 찾아주신 여러분, 진심으로
+                  환영합니다.<br />
+                  ‘건강한 국민, 건강한 삶’이 실현되고 제도가 지속가능할 수
+                  있도록 ‘소통과 배려’로 국민 여러분과 함께 하면서 최선을
+                  다하겠습니다.
+                </p>
+                <a href="#">바로가기</a>
               </div>
-              <div class="thumbnail-news">
-                <a href="#">
+            </div>
+            <div class="information">
+              <div>
+                <h4>경영공시</h4>
+                <p>
+                  경영 투명성 확보 및 국민의 알권리 충족을 위하여 중요 경영정보
+                  공개
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+              <div>
+                <h4>경영철학</h4>
+                <p>
+                  건강사회 실현과 건강보험 지속가능성을 보장하기 위해 윤리/인권,
+                  ESG 경영 등 안내
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+              <div>
+                <h4>정보공개청구</h4>
+                <p>
+                  공단이 보유·관리하고 있는 정보 중 국민이 필요한 정보를 공개
+                  청구
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+              <div>
+                <h4>사전정보목록</h4>
+                <p>
+                  공단이 보유·관리하고 있는 정보 중 국민생활에 영향을 미치는
+                  정보 등을 사전에 공개
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+            </div>
+            <div class="service-overview">
+              <div class="link-container">
+                <div>
                   <img
-                    src="./images/main/community_section/thumbnail_img.jpg"
-                    alt="모나미 뉴스 썸네일 이미지"
+                    src="./images/main/section4/service_overview/service_img1.png"
+                    alt=""
                   />
-                </a>
-                <div class="thumbnail-text">
-                  <h4><a href="#">모나미 X Danha 153 볼펜 세트 출시</a></h4>
-                  <p>
-                    K-아티스트 손잡고 한국의 아름다움 알린다… 모나미 X Danha 153
-                    볼펜 세트 출시- 특색 있는 국내 아티스트 발굴 ..
-                  </p>
-                  <span>2024-09-23</span>
+                  <div class="text">
+                    <h4>건강보험 웹진</h4>
+                    <p>
+                      건강보험의 다양한 제도정책부터 올바른 건강정보까지 안내
+                    </p>
+                    <a href="#">자세히보기</a>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="./images/main/section4/service_overview/service_img2.png"
+                    alt=""
+                  />
+                  <div class="text">
+                    <h4>소식지 신청/해지</h4>
+                    <p>
+                      최신 건강보험 제도 및 건강 정보를 이메일로 제공하는 서비스
+                    </p>
+                    <a href="#">자세히보기</a>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="./images/main/section4/service_overview/service_img3.png"
+                    alt=""
+                  />
+                  <div class="text">
+                    <h4>건강보장 Issue&View</h4>
+                    <p>건강보험연구원의 학술활동, 해외 동향 소개</p>
+                    <a href="#">자세히보기</a>
+                  </div>
                 </div>
               </div>
-              <ul class="news-list">
-                <li>
-                  <a href="#"
-                    >- 모나미, 산업 현장 특화형 전문 마카 ’프로캡 드라이 펜슬
-                    마카‘ ..</a
-                  >
-                  <span class="upload-date">2024-09-19</span>
-                </li>
-                <li>
-                  <a href="#">- 모나미, LG트윈스 팬시 굿즈 출시</a
-                  ><span class="upload-date">2024-09-09</span>
-                </li>
-                <li>
-                  <a href="#">- 모나미, 라이엇 게임즈와 컬래버 신제품 출시</a>
-                  <span class="upload-date">2024-08-05</span>
-                </li>
-              </ul>
-            </div>
-            <div class="inquiry">
-              <div>
-                <img
-                  src="./images/main/community_section/inquiry_icon.png"
-                  alt=""
-                />
-                <h4>INQUIRY</h4>
-                <p>
-                  언제나 소중한 의견에 귀 기울이겠습니다.<br />
-                  궁금한 사항은 문의하세요.
-                </p>
+              <div class="s4-promo-container">
+                <div class="title-btn-box">
+                  <h4>홍보존</h4>
+                  <div>
+                    <div class="slide-index">
+                      <span class="s4-current-index"></span> /
+                      <span class="s4-total-index"></span>
+                    </div>
+                    <span class="s4-slide-btn s4-prev-slide"></span>
+                    <span class="s4-slide-btn s4-pause-slide"></span>
+                    <span class="s4-slide-btn s4-next-slide"></span>
+                  </div>
+                </div>
+                <div class="slide-container">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./images/main/section4/promo/s4_promo_img4.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./images/main/section4/promo/s4_promo_img1.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./images/main/section4/promo/s4_promo_img2.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./images/main/section4/promo/s4_promo_img3.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./images/main/section4/promo/s4_promo_img4.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./images/main/section4/promo/s4_promo_img1.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <span>INQUIRY NOW</span>
-            </div>
-            <div class="naver-store">
-              <div>
-                <img
-                  src="./images/main/community_section/brandStore_icon.png"
-                  alt=""
-                />
-                <h4>모나미 네이버 브랜드스토어</h4>
-                <p>
-                  모나미 공식 쇼핑몰입니다.<br />
-                  공식몰만의 다양한 혜택을 만나보세요.
-                </p>
-              </div>
-              <span>BUY NOW</span>
             </div>
           </div>
         </section>
       </main>
       <!-- ########## Footer ########## -->
       <footer>
-        <div class="inner">
-          <div class="footer-top">
-            <img src="./images/footer/footer_logo.jpg" alt="" />
-            <div class="footer-links">
-              <a href="#">회사소개</a>
-              <a href="#">개인정보처리방침</a>
-              <a href="#">이메일무단수집거부</a>
-            </div>
+        <div class="family-site">
+          <div class="inner">
+            <span class="family-site1">분야별 업무사이트</span>
+            <span class="family-site2">관련 사이트</span>
           </div>
-          <div class="footer-bot">
+        </div>
+        <div class="footer-top">
+          <div class="inner">
             <div class="company-info">
-              <span>INFO</span>
+              <img
+                src="./images/footer/footer_logo.png"
+                alt="국민건강보험공단 로고 이미지"
+              />
               <p>
-                ADDRESS : 경기도 용인시 수지구 손곡로 17 l TEL : 031-216-0153 l
-                FAX : 031-270-5154
+                (26464) 강원특별자치도 원주시 건강로 32(반곡동) 국민건강보험공단
               </p>
-              <p>COPYRIGHT(C) MONAMI.CO.,LTD. ALL RIGHTS RESERVED.</p>
+              <p><b>대표전화 1577-1000</b>(유료, 평일 09시~18시)</p>
+              <p><b>해외이용 +82-33-811-2001</b>(유료, 평일 09시~18시)</p>
             </div>
-            <div class="customer-center">
-              <span>customer center</span>
-              <p>080-022-0153</p>
-              <a href="#">카카오톡 문의</a>
-            </div>
-            <div class="family-site">
-              <div class="fam-dropdown">
-                <div class="fam-title">FAMILY SITE</div>
-                <ul class="fam-sub-navi">
-                  <li><a href="#">모나미몰</a></li>
-                  <li><a href="#">모나르떼</a></li>
-                  <li><a href="#">모나미 컨셉스토어</a></li>
-                  <li><a href="#">주식회사 항소</a></li>
-                  <li><a href="#">모나미 미술대회</a></li>
-                  <li><a href="#">모나미 기업서비스</a></li>
-                  <li><a href="#">모나미코스메틱</a></li>
-                </ul>
+            <div class="location-sns">
+              <a href="#">찾아오시는 길</a>
+              <div class="sns">
+                <a href="#"><i class="xi-naver"></i></a>
+                <a href="#"><i class="xi-facebook"></i></a>
+                <a href="#"><i class="xi-kakaostory"></i></a>
+                <a href="#"><i class="xi-youtube-play"></i></a>
+                <a href="#"><i class="xi-instagram"></i></a>
               </div>
             </div>
           </div>
         </div>
+        <div class="footer-bottom">
+          <div class="inner">
+            <div class="footer-links">
+              <a href="#">이용약관</a>
+              <a href="#">영상정보처리기기운영방침</a>
+              <a href="#" class="em-text">개인정보처리방침</a>
+              <a href="#">온라인도우미</a>
+              <a href="#">
+                <img src="./images/footer/footer_links_img1.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./images/footer/footer_links_img2.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./images/footer/footer_links_img3.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./images/footer/footer_links_img4.png" alt="" />
+              </a>
+            </div>
+            <p>© National Health Insurance Service. All rights reserved.</p>
+          </div>
+        </div>
       </footer>
+    </div>
+    <!-- Family Site Modal 1 & 2 -->
+    <div class="family-modal family-modal1">
+      <div class="modal-content">
+        <h4>분야별 업무사이트</h4>
+        <ul>
+          <li>
+            <a href="#">노인장기요양보험</a>
+            <a href="#">건강관리포털시스템</a>
+            <a href="#">국민건강보험공단 전문도서관</a>
+          </li>
+          <li>
+            <a href="#">사회보험징수포털</a>
+            <a href="#">국가건강검진교육연수원</a>
+            <a href="#">국민건강보험공단 공단가족</a>
+          </li>
+          <li>
+            <a href="#">요양기관정보마당</a>
+            <a href="#">건강보험 빅데이터 플랫폼</a>
+          </li>
+          <li>
+            <a href="#">국민건강보험 EDI 서비스</a>
+            <a href="#">국민건강보험공단 인재개발원</a>
+          </li>
+        </ul>
+      </div>
+      <i class="xi-close family1-close"></i>
+    </div>
+    <div class="family-modal family-modal2">
+      <div class="modal-content">
+        <h4>관련 사이트</h4>
+        <ul>
+          <li>
+            <a href="#">서울요양원</a>
+            <a href="#">근로복지공단</a>
+            <a href="#">건강보험심사평가원</a>
+            <a href="#">보건복지데이터포털</a>
+            <a href="#">한국보건의료연구원</a>
+            <a href="#">4대사회보험 정보연계센터</a>
+          </li>
+          <li>
+            <a href="#">일산병원</a>
+            <a href="#">보건복지부</a>
+            <a href="#">정부24</a>
+            <a href="#">한국사회보장정보원</a>
+            <a href="#">한국의료분쟁조정중재원</a>
+            <a href="#">국민재난안전포털</a>
+          </li>
+          <li>
+            <a href="#">행정정보공동이용시스템</a>
+            <a href="#">국민권익위원회</a>
+            <a href="#">전자가족관계등록시스템</a>
+            <a href="#">고용보험</a>
+            <a href="#">하이코리아</a>
+            <a href="#">국가트라우마센터</a>
+          </li>
+          <li>
+            <a href="#">국민연금공단</a>
+            <a href="#">금융결제원 통합납부서비스</a>
+            <a href="#">보건복지상담센터</a>
+            <a href="#">고용산재보험 토탈서비스</a>
+            <a href="#">국민건강보험 동우회</a>
+            <a href="#">한국도로교통공단</a>
+          </li>
+        </ul>
+      </div>
+      <i class="xi-close family1-close"></i>
+    </div>
+    <!-- Integrated Search Modal -->
+    <div class="search-modal">
+      <div class="search-box">
+        <h1>검색어를 입력해주세요</h1>
+        <div>
+          <input type="text" placeholder="무엇을 찾고 계시나요?" />
+        </div>
+      </div>
+      <i class="xi-close search-box-close"></i>
     </div>
   </body>
 </html>

@@ -3,424 +3,739 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OLIVE YOUNG | CJ올리브영</title>
-    <link rel="icon" href="./images/oy_favi.png" />
-    <!-- Custom css -->
+    <title>NAVER VIBE</title>
+    <link rel="icon" href="./images/favicon.jfif" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <!-- jQuery CDN -->
     <script src="./script/jquery-1.12.4.js" defer></script>
+    <!-- Slick.js -->
+    <link rel="stylesheet" href="./script/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./script/slick/slick.css" />
+    <script src="./script/slick/slick.js" defer></script>
     <!-- Custom js -->
     <script src="./script/script.js" defer></script>
   </head>
   <body>
-    <!-- ########## Sitemap ########## -->
-    <div class="sitemap">
-      <div class="content">
-        <button class="sitemap-close">
-          <i class="xi-close"></i>
-        </button>
-        <ul class="sitemap-nav">
-          <li>
-            <h2>회사소개</h2>
-            <div>
-              <a href="#">회사소개</a>
-              <a href="#">CJ올리브영 비전</a>
-              <a href="#">CJ올리브영 히스토리</a>
-              <a href="#">국내 플랫폼 사업</a>
-              <a href="#">글로벌 플랫폼 사업</a>
-              <a href="#">브랜드 사업</a>
-            </div>
-          </li>
-          <li>
-            <h2>지속가능경영</h2>
-            <div>
-              <a href="#">요약</a>
-              <a href="#">상생</a>
-              <a href="#">사회공헌</a>
-              <a href="#">환경</a>
-              <a href="#">윤리경영</a>
-              <a href="#">정보보안</a>
-              <a href="#">IMPACT REPORT</a>
-            </div>
-          </li>
-          <li>
-            <h2>산업지원정보</h2>
-            <div>
-              <a href="#">정부지원사업</a>
-            </div>
-          </li>
-          <li>
-            <a href="#">뉴스룸</a>
-          </li>
-          <li>
-            <a href="#">커리어</a>
-          </li>
-        </ul>
-        <div class="sitemap-fam">
-          <a href="#">올리브영 Mall</a>
-          <a href="#">Global Mall</a>
-          <a href="#">D.PLOT</a>
-          <a href="#">Tech Blog</a>
-        </div>
-      </div>
-    </div>
     <div id="wrap">
-      <!-- ########## Header ########## -->
+      <!-- ##### Header(Mobile) ##### -->
       <header>
-        <div class="logo-and-nav">
-          <div class="logo">
-            <a href="#">
-              <img
-                src="./images/header/oy_logo.png"
-                alt="올리브영 로고 이미지"
-              />
-            </a>
-          </div>
-          <nav class="header-nav">
-            <ul>
-              <li class="h-nav-item">
-                <a href="#">회사소개</a>
-              </li>
-              <li class="h-nav-item">
-                <a href="#">지속가능경영</a>
-              </li>
-              <li class="h-nav-item">
-                <a href="#">산업지원정보</a>
-              </li>
-              <li class="h-nav-item">
-                <a href="#">뉴스룸</a>
-              </li>
-              <li class="h-nav-item">
-                <a href="#">커리어</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="header-logo">
+          <img src="./images/header/logo.svg" alt="" />
         </div>
-        <div class="header-menu">
-          <div class="family-site-container">
-            <button class="fam-site-open">Family Site</button>
-            <div class="family-site">
-              <a href="#">올리브영 Mall</a>
-              <a href="#">Global Mall</a>
-              <a href="#">D.PLOT</a>
-              <a href="#">Tech Blog</a>
-            </div>
-          </div>
-          <div class="sitemap-open">
-            <span></span>
-            <span></span>
-          </div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </header>
+      <!-- ##### Left Side Bar ##### -->
+      <aside class="left-side-bar">
+        <!-- Close Menu Btn(Mobile) -->
+        <div class="close-menu-btn">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="side-bar-logo">
+          <a href="#">
+            <img src="./images/sidebar/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="side-bar-login">
+          <a class="login-link" href="#">로그인</a>
+          <p>로그인하고 할인 멤버십 확인하기</p>
+          <a class="membership-link" href="#">멤버십 구독</a>
+        </div>
+        <div class="side-bar-search">
+          <input type="text" placeholder="VIBE 검색" />
+        </div>
+        <div class="side-bar-nav">
+          <a class="active" href="#">투데이</a>
+          <a href="#">차트</a>
+          <a href="#">최신앨범</a>
+          <a href="#">DJ 스테이션</a>
+          <a href="#">VIBE MAG</a>
+          <a href="#">이달의 노래</a>
+        </div>
+        <div class="side-bar-service">
+          <a href="#">서비스 소개</a>
+          <a href="#">내돈내듣</a>
+          <a href="#">VIBE 오디오</a>
+          <a href="#">이용권 선물</a>
+        </div>
+        <div class="side-bar-install">
+          <a class="desktop-install" href="#">데스크톱앱 설치</a>
+        </div>
+      </aside>
+      <!-- ##### Current Play Bar ##### -->
+      <div class="current-play-bar">
+        <div class="track-info">
+          <img
+            class="album-cover"
+            src="./images/current_play_bar/album_cover_sample.jpg"
+            alt=""
+          />
+          <div class="title-and-artist">
+            <b class="title">1999</b>
+            <span class="artist">Hitsujibungaku</span>
+          </div>
+        </div>
+        <div class="controls">
+          <i class="fa fa-random shuffle-btn" aria-hidden="true"></i>
+          <i class="fa fa-step-backward prev-music-btn" aria-hidden="true"></i>
+          <i class="fa fa-play play-btn" aria-hidden="true"></i>
+          <i class="fa fa-step-forward next-music-btn" aria-hidden="true"></i>
+          <i class="fa fa-retweet loop-btn" aria-hidden="true"></i>
+        </div>
+        <div class="volume-and-time">
+          <div class="music-play-time">
+            <span class="current-time"
+              ><em class="current-min">00</em>:<em class="current-sec"
+                >00</em
+              ></span
+            >
+            <i>/</i>
+            <span class="total-time"
+              ><em class="total-min">03</em>:<em class="total-sec">46</em></span
+            >
+          </div>
+          <div class="volume-bar">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              class="volume-slider"
+            />
+          </div>
+        </div>
+      </div>
       <!-- ########## Main ########## -->
       <main>
-        <section class="hero-section">
+        <div class="top-banner">
+          <a href="#"
+            ><img src="./images/top_banner/top_banner_img.png" alt=""
+          /></a>
+        </div>
+        <section class="today-headline">
+          <div class="inner">
+            <div class="thumbnail">
+              <a href="#">
+                <img src="./images/headline/headline_thumb.png" alt=""
+              /></a>
+            </div>
+            <div class="content">
+              <img src="./images/headline/headline_icon.png" alt="" />
+              <h2 class="headline-title">싫어서 만든 노래</h2>
+              <p class="headline-info">
+                세상에 싫은 것들이 너무 많을 때, 밴드 설(SURL)은 더욱 힘껏
+                싫어하는 대신에 노래를 만들었다. 더 깊이 들여다보고, 더 많이
+                고민하고 매만지며, 더 많은 악기와 소리를 얹어서.
+              </p>
+              <span class="headline-sub">VIBE MAGㆍ2024.10.29</span>
+            </div>
+          </div>
+        </section>
+        <section class="magazine">
           <div class="inner">
             <div class="heading">
-              <span>글로벌 뷰티&헬스 트렌드 리딩 기업</span>
-              <h2>Better <span>Beauty & Health</span></h2>
-              <p>
-                CJ올리브영은 옴니채널 플랫폼 "올리브영"을 대표로,<br />전 세계
-                고객에게 건강한 아름다움의 가치를 제공합니다.
-              </p>
+              <h2>매거진</h2>
+              <a class="more-btn" href="#">더보기</a>
+            </div>
+            <div class="magazine-list">
+              <ul class="section-slide magazine-slide">
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img01.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #193:<span>박재범</span>
+                  </p>
+                  <span class="upload-date">2024.10.22</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img02.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release #193:<span>로제, 찰리 엑스씨엑스</span>
+                  </p>
+                  <span class="upload-date">2024.10.22</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img03.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #192:<span>QWER</span>
+                  </p>
+                  <span class="upload-date">2024.10.14</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img04.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release #192:<span>이적, 소피</span>
+                  </p>
+                  <span class="upload-date">2024.10.07</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img05.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    밴드 드래곤<span>포니의 탄생</span>
+                  </p>
+                  <span class="upload-date">2024.09.27</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img06.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">NA<span>HWASA</span></p>
+                  <span class="upload-date">2024.09.25</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img07.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #191:<span>The Weekend</span>
+                  </p>
+                  <span class="upload-date">2024.09.24</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img08.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release #191:<span>백현, 린킨파크</span>
+                  </p>
+                  <span class="upload-date">2024.09.23</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img09.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #190:<span>Oasis</span>
+                  </p>
+                  <span class="upload-date">2024.09.11</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img10.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    Day6,<span>우릴 위한 처방전</span>
+                  </p>
+                  <span class="upload-date">2024.09.06</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img11.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    온유가<span>흘러가는 곳은?</span>
+                  </p>
+                  <span class="upload-date">2024.09.04</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img12.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release#190:<span>르세라핌, 사브리나 카펜터</span>
+                  </p>
+                  <span class="upload-date">2024.09.02</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img13.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    윤석철트리오의<span>여름은 아직!</span>
+                  </p>
+                  <span class="upload-date">2024.08.29</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img14.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #189:<span>HONNE</span>
+                  </p>
+                  <span class="upload-date">2024.08.20</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img15.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release#189:<span>재현, 피니어스</span>
+                  </p>
+                  <span class="upload-date">2024.08.19</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img16.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    프로미스나인<span>여름을 약속해</span>
+                  </p>
+                  <span class="upload-date">2024.08.13</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img17.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #188:<span>혁오</span>
+                  </p>
+                  <span class="upload-date">2024.08.06</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img18.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    New Release#188:<span>캘빈 해리스, 엘리 굴딩</span>
+                  </p>
+                  <span class="upload-date">2024.08.05</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="magazine-thumb"
+                      src="./images/magazine/magazine_slide_img19.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="magazine-title">
+                    이주의 디깅 #187:<span>키스 오브 라이프</span>
+                  </p>
+                  <span class="upload-date">2024.07.23</span>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
-        <section class="oy-news-section">
+        <section class="rec-playlist">
           <div class="inner">
-            <ul class="news-list">
-              <li class="main-news">
-                <a href="#">
-                  <div class="main-news-thumb">
+            <div class="heading">
+              <h2>VIBE 추천 플레이리스트</h2>
+              <a class="more-btn" href="#">더보기</a>
+            </div>
+            <div class="rec-list">
+              <ul class="section-slide rec-slide">
+                <li>
+                  <a href="#">
                     <img
-                      src="./images/oy_news_section/news_thumb1.jpg"
-                      alt="CJ올리브영 메인 뉴스 썸네일"
-                    />
-                  </div>
-                  <div class="main-news-title">
-                    <span>보도자료</span>
-                    <h2>
-                      CJ올리브영 혁신매장 1호점 '올리브영N 성수' 내달 오픈
-                    </h2>
-                  </div>
-                </a>
-              </li>
-              <li class="news news01">
-                <a href="#">
-                  <div class="news-thumb">
-                    <img
-                      src="./images/oy_news_section/news_thumb2.jpg"
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img01.jpg"
                       alt=""
                     />
-                  </div>
-                  <div class="news-title">
-                    <span>올리브영 소식</span>
-                    <h2>
-                      [한국경제] "올리브영이 마법을 부렸다"…2년 만에 벌어진 일
-                      '깜짝'
-                    </h2>
-                  </div>
-                </a>
-              </li>
-              <li class="news news02">
-                <a href="#">
-                  <div class="news-thumb">
+                  </a>
+                  <p class="rec-title">요즘 국내 댄스</p>
+                  <span class="sub-title">VIBE 국내 댄스</span>
+                </li>
+                <li>
+                  <a href="#">
                     <img
-                      src="./images/oy_news_section/news_thumb3.jpg"
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img02.jpg"
                       alt=""
                     />
-                  </div>
-                  <div class="news-title">
-                    <span>지속가능경영</span>
-                    <h2>2024 CJ올리브영 IMPACT REPORT 발간</h2>
-                  </div>
-                </a>
-              </li>
-              <li class="news news03">
-                <a href="#">
-                  <div class="news-thumb">
+                  </a>
+                  <p class="rec-title">요즘 발라드</p>
+                  <span class="sub-title">VIBE 발라드</span>
+                </li>
+                <li>
+                  <a href="#">
                     <img
-                      src="./images/oy_news_section/news_thumb4.png"
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img03.jpg"
                       alt=""
                     />
-                  </div>
-                  <div class="news-title">
-                    <span>테크블로그</span>
-                    <h2>올리브영 테크블로그 바로가기</h2>
-                  </div>
-                </a>
-              </li>
-              <li class="news news04">
-                <a href="#">
-                  <div class="news-thumb">
+                  </a>
+                  <p class="rec-title">요즘 K-POP</p>
+                  <span class="sub-title">VIBE K-POp</span>
+                </li>
+                <li>
+                  <a href="#">
                     <img
-                      src="./images/oy_news_section/news_thumb5.png"
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img04.jpg"
                       alt=""
                     />
-                  </div>
-                  <div class="news-title">
-                    <span>산업지원정보</span>
-                    <h2>화장품 산업 관련 정부지원사업 모아보기</h2>
-                  </div>
-                </a>
-              </li>
-              <li class="news news05">
-                <a href="#">
-                  <div class="news-thumb">
+                  </a>
+                  <p class="rec-title">요즘 아이돌</p>
+                  <span class="sub-title">VIBE K-POP</span>
+                </li>
+                <li>
+                  <a href="#">
                     <img
-                      src="./images/oy_news_section/news_thumb6.png"
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img05.jpg"
                       alt=""
                     />
-                  </div>
-                  <div class="news-title">
-                    <span>채용공고</span>
-                    <h2>올리브영 채용공고 모아보기</h2>
-                  </div>
-                </a>
-              </li>
-            </ul>
+                  </a>
+                  <p class="rec-title">요즘 국내 알앤비</p>
+                  <span class="sub-title">VIBE 국내 알앤비/소울</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img06.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 힙합</p>
+                  <span class="sub-title">VIBE 국내 힙합</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img07.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 인디</p>
+                  <span class="sub-title">VIBE 국내 인디</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img08.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 포크/어쿠스틱</p>
+                  <span class="sub-title">VIBE 국내 포크/어쿠스틱</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img09.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 락/메탈</p>
+                  <span class="sub-title">VIBE 국내 락/메탈</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img10.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 OST</p>
+                  <span class="sub-title">VIBE OST</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img11.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 트로트</p>
+                  <span class="sub-title">VIBE 트로트</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/rec_list/rec_list_img12.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="rec-title">요즘 국내 재즈</p>
+                  <span class="sub-title">VIBE 재즈</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
-        <section class="oy-platforms">
-          <!-- <div class="go-top-btn"></div> -->
+        <section class="today-playlist">
           <div class="inner">
-            <div class="platform-intro">
-              <h2>OLIVE YOUNG <span>Platforms</span></h2>
-              <div class="platform-anchor">
-                <a class="pa pa-1 active" href="#platform1">올리브영 매장</a>
-                <a class="pa pa-2" href="#platform2">올리브영 Online(국내)</a>
-                <a class="pa pa-3" href="#platform3">올리브영 글로벌</a>
-                <a class="pa pa-4" href="#platform4">디플롯</a>
-              </div>
+            <div class="heading">
+              <h2>생각이 많을 때💬</h2>
+              <a class="more-btn" href="#">더보기</a>
             </div>
-            <div class="platform-container">
-              <div id="platform1" class="platform active">
-                <img
-                  src="./images/oy_platforms_section/platform_img1.jpg"
-                  alt=""
-                />
-                <h3>
-                  고객과 가장 가까운 곳에서<span
-                    >건강한 아름다움을 제안합니다.</span
-                  >
-                </h3>
-                <p>
-                  우리는 1,300여개의 매장을 기반으로 고객에게
-                  <br />뷰티&헬스 상품을 큐레이션합니다.<br />또한 체험형
-                  콘텐츠와 커머스의 연계를 통해 <br />파트너사들에게 매력적인
-                  브랜딩, 마케팅 채널로 <br />진화하고 있습니다.
-                </p>
-                <a href="#">올리브영 매장이 보고 싶다면?</a>
-              </div>
-              <div id="platform2" class="platform">
-                <img
-                  src="./images/oy_platforms_section/platform_img2.jpg"
-                  alt=""
-                />
-                <h3>
-                  고객이 건강한 아름다움을 찾아가는<span
-                    >온라인 PLAYGROUND를 제공합니다.</span
-                  >
-                </h3>
-                <p>
-                  우리는 차별화된 온라인 콘텐츠와 AI기술 기반 상품 추천을 통해
-                  월 이용자수 480만명,<br />멤버십 회원 수 1,40만명 이상의
-                  뷰티&헬스 커뮤니티를 구현했습니다.<br />또한 업계 최초 당일
-                  배송 서비스인 오늘드림을 실행하여 고객경험을 혁신했습니다.
-                </p>
-                <a href="#">올리브영 Online 서비스가 궁금하다면?</a>
-              </div>
-              <div id="platform3" class="platform">
-                <img
-                  src="./images/oy_platforms_section/platform_img3.jpg"
-                  alt=""
-                />
-                <h3>전세계에 한국의<span>뷰티&헬스를 알립니다.</span></h3>
-                <p>
-                  우리는 한국의 뷰티&헬스 브랜드들이 세계로 뻗어 나가는 교두보
-                  역할을 수행합니다.<br />2019년 런칭한 글로벌몰과 연간 약
-                  300만명 이상의 외국인 고객이 방문하는 국내 글로벌
-                  특화매장은<br />파트너사와 함께 글로벌 시장에서 동반 성장을 할
-                  수 있는 핵심 원동력입니다.
-                </p>
-                <a href="#">올리브영의 글로벌 플랫폼을 보고싶다면?</a>
-              </div>
-              <div id="platform4" class="platform">
-                <img
-                  src="./images/oy_platforms_section/platform_img4.jpg"
-                  alt=""
-                />
-                <h3>
-                  가치지향 라이프스타일 플랫폼을 통해<span
-                    >고객에게 다양한 즐거움을 선물합니다.</span
-                  >
-                </h3>
-                <p>
-                  고객이 뷰티&헬스를 넘어 라이프스타일 전반에서 자신만의
-                  가치와<br />취향을 반영한 브랜드를 탐색할 수 있습니다.<br />이러한
-                  고객 경험의 확장을 통해 우리는 뷰티&헬스를 넘어선<br />종합
-                  라이프스타일 플랫폼으로 도약합니다.
-                </p>
-                <a href="#">D.PLOT의 감각적인 제품들이 궁금하다면?</a>
-              </div>
+            <div class="today-list">
+              <ul class="section-slide today-slide">
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img1.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">무기력한 하루 근데 우울을 곁들인</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img2.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">행복해지는 주문을 걸어</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">저기요 조용히 좀 해주세요</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img4.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">혼자만의 시간을 위해</p>
+                  <span class="sub-title">VIBE 국내 포크/어쿠스틱</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img5.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">이 세상에 나 혼자 남은 아포칼립스</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img6.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">지금 잠수 중</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img7.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">격렬하게 아무것도 안 하고 싶다</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img8.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">방안에서</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="rec-thumb"
+                      src="./images/today_playlist/today_list_img9.png"
+                      alt=""
+                    />
+                  </a>
+                  <p class="today-title">혼술 타임</p>
+                  <span class="sub-title">VIBE</span>
+                </li>
+              </ul>
             </div>
           </div>
+        </section>
+        <section class="store-link">
+          <div class="inner">
+            <img src="./images/store_link/mixtape_img.png" alt="" />
+            <h2>
+              아티스트 고르고 매일 믹스테잎 받기<span
+                >지금 VIBE 앱에서 취향 길들이기를 해보세요!</span
+              >
+            </h2>
+            <div>
+              <a href="#" class="app-link app-store"></a>
+              <a href="#" class="app-link play-store"></a>
+            </div>
+          </div>
+        </section>
+        <section class="intro">
+          <h2>
+            지금 바로 로그인하고<span>한땀 한땀 만든 플레이리스트 듣기!</span>
+          </h2>
+          <p>
+            K-Pop부터 클래식까지 모든 장르를 아우르는 건 기본.<br />수천 개의
+            플레이리스트가 트렌드에 맞게 업데이트.
+          </p>
+          <div class="intro-bg"></div>
         </section>
       </main>
       <!-- ########## Footer ########## -->
       <footer>
         <div class="footer-top">
-          <div class="footer-links1">
-            <ul>
-              <li>
-                <h3>회사</h3>
-                <a href="#">미션</a>
-                <a href="#">사업영역</a>
-                <a href="#">연혁</a>
-                <a href="#">지속가능경영</a>
-              </li>
-              <li>
-                <h3>산업지원정보</h3>
-                <a href="#">정부지원사업</a>
-              </li>
-              <li>
-                <h3>뉴스룸</h3>
-                <a href="#">올리브영소식</a>
-                <a href="#">보도자료</a>
-              </li>
-              <li>
-                <h3>문의</h3>
-                <a href="#">제휴 제안</a>
-                <a href="#">상품 입점 문의</a>
-                <a href="#">가맹 및 테넌트 문의</a>
-                <a href="#">기프트카드 문의</a>
-                <a href="#">온라인 제보</a>
-              </li>
-              <li>
-                <h3>고객센터</h3>
-                <a href="#"
-                  >전화 (올리브영 매장) : 1577-4887 (평일 09:00 - 18:00)</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="cj-group-links">
-            <button class="group-link-open">CJ그룹 계열사 바로가기</button>
-            <div class="cj-group">
-              <ul>
-                <li>
-                  <h4>CJ그룹</h4>
-                  <a href="#">CJ주식회사</a>
-                </li>
-                <li>
-                  <h4>식품 & 식품서비스</h4>
-                  <a href="#">CJ제일제당</a>
-                  <a href="#">CJ푸드빌</a>
-                  <a href="#">CJ프레시웨이</a>
-                </li>
-                <li>
-                  <h4>생명공학</h4>
-                  <a href="#">CJ제일제당 BIO산업부문</a>
-                  <a href="#">CJ Feed & Care</a>
-                </li>
-                <li>
-                  <h4>물류 & 신유통</h4>
-                  <a href="#">CJ대한통운</a>
-                  <a href="#">CJ대한통운 건설부문</a>
-                  <a href="#">CJ올리브영</a>
-                  <a href="#">CJ올리브네트웍스</a>
-                  <a href="#">CJ ENM 커머스부문</a>
-                </li>
-                <li>
-                  <h4>엔터테인먼트 & 미디어</h4>
-                  <a href="#">CJ ENM 엔터테인먼트부문</a>
-                  <a href="#">CJ CGV</a>
-                </li>
-              </ul>
+          <div class="inner">
+            <div class="notice">
+              <a class="notice-link" href="#">공지사항</a>
+              <a class="notice-title" href="#">VIBE 첫 구독자 혜택 변경 안내</a>
+            </div>
+            <div class="sns-link">
+              <a href="#">
+                <i class="xi-facebook-official" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="xi-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="xi-naver-square"></i>
+              </a>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="company-info">
-            <div class="footer-links2">
-              <a href="#">개인정보처리방침</a>
-              <a href="#">법적고지</a>
-              <a href="#">이메일 무단 수집 금지</a>
-            </div>
-            <p>
-              <span>씨제이올리브영 주식회사</span>
-              <span
-                >서울특별시 용산구 한강대로 372, 24층 (동자동, KDB타워)</span
+          <div class="inner">
+            <div class="company-info company-info1">
+              <span class="info-head"
+                >네이버(주) 대표이사<span>최수연</span></span
               >
-              <span>ⓒ CJ OliveYoung. All Rights Reserved</span>
-            </p>
-            <p>
-              <span>대표자 : 이선정</span
-              ><span>사업자등록번호 : 809-81-01574</span>
-            </p>
-          </div>
-          <div class="sns-links">
-            <a href="#">
-              <img src="./images/footer/oy_sns_img1.png" alt="" />
-              <span>Youtube</span>
-            </a>
-            <a href="#">
-              <img src="./images/footer/oy_sns_img2.png" alt="" />
-              <span>Official</span>
-            </a>
-            <a href="#">
-              <img src="./images/footer/oy_sns_img2.png" alt="" />
-              <span>Global</span>
-            </a>
-            <a href="#">
-              <img src="./images/footer/oy_sns_img3.png" alt="" />
-              <span>Blog</span>
-            </a>
-            <a href="#">
-              <img src="./images/footer/oy_sns_img4.png" alt="" />
-              <span>LinkedIn</span>
-            </a>
+              <span class="info-head"
+                >사업자등록번호<span>220-81-62517</span></span
+              >
+              <span class="info-head"
+                >통신판매업신고번호<span>제2006-경기성남-0692호</span></span
+              >
+            </div>
+            <div class="company-info company-info2">
+              <span class="info-head"
+                >주소<span
+                  >경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561</span
+                ></span
+              >
+              <span class="info-head">대표전화<span>1588-3820</span></span>
+              <span class="info-head"
+                >이메일<a href="mailto:hyo4754@gmail.com"
+                  >ccnaver@naver.com</a
+                ></span
+              >
+              <span class="info-head"
+                >호스팅 서비스 제공<span>NAVER Cloud</span></span
+              >
+            </div>
+            <div class="footer-links">
+              <a href="#">개인정보처리방침</a>
+              <a href="#">네이버 이용약관</a>
+              <a href="#">VIBE 이용약관</a>
+              <a href="#">VIBE 커뮤니티 운영정책</a>
+              <a href="#">고객센터</a>
+              <a href="#">결제/환불 안내</a>
+              <a href="#">VIBE 스마트봇</a>
+              <a href="#">톡톡상담</a>
+              <a href="#">사업자정보 확인</a>
+              <a href="#">© NAVER Corp.</a>
+            </div>
           </div>
         </div>
       </footer>

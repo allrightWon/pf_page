@@ -1,24 +1,57 @@
-$(".content-slide").slick({
-  slidesToShow: 5,
-  slidesToScroll: 5,
-  arrows: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        arrows: false,
-      },
+$(function ($) {
+  const oliveYoung = {
+    init() {
+      this.header();
+      this.platform();
+      this.footer();
     },
-  ],
-});
+    header() {
+      // Family Site Open
+      $(".fam-site-open").click(function () {
+        $(".family-site").toggle();
+      });
+      // SiteMap Open
+      $(".sitemap-open").click(function () {
+        $(".sitemap").addClass("active");
+        $("body").addClass("sitemap-is-on");
+      });
+      $(".sitemap-close").click(function () {
+        $(".sitemap").removeClass("active");
+        $("body").removeClass("sitemap-is-on");
+      });
+      // Mobile Sitemap Nav Click Function
+      $(".sitemap-nav li").click(function () {
+        $(this).siblings("li").children("div").removeClass("active");
+        $(this).children("div").toggleClass("active");
+      });
+    },
+    platform() {
+      // Platform Section Scroll Function
+      $(window).scroll(function () {
+        let scrollTop = $(this).scrollTop();
+        let platforms = [
+          $("#platform1"),
+          $("#platform2"),
+          $("#platform3"),
+          $("#platform4"),
+        ];
 
-// Section : FAQ Accordion
-$(".question").click(function () {
-  $(this).siblings(".question").removeClass("active");
-  $(this).toggleClass("active");
-  $(".answer").stop().slideUp();
-  $(this).next().stop().slideToggle();
-});
+        platforms.forEach((platform, index) => {
+          if (scrollTop >= platform.offset().top - 150) {
+            $(".platform").removeClass("active");
+            platform.addClass("active");
+            $(".pa").removeClass("active");
+            $(".pa-" + (index + 1)).addClass("active");
+          }
+        });
+      });
+    },
+    footer() {
+      // Group Link Open
+      $(".group-link-open").click(function () {
+        $(".cj-group").toggle();
+      });
+    },
+  };
+  oliveYoung.init();
+}, jQuery);
